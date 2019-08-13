@@ -16,6 +16,14 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Ropa r1 = new Ropa("S","camisa",30,30,"123",5,true);
+        
+        r1.validarDescuento();
+        System.out.println(r1.isDescuento());
+        System.out.println(r1.getPrecio() + "hola");
+        r1.aplicarDescuento();
+        System.out.println(r1.getPrecio());
+        
     }
     
 }
