@@ -5,6 +5,10 @@
  */
 package Shop;
 
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
 /**
  *
  * @author diogenes
@@ -15,6 +19,7 @@ public class Intentando extends javax.swing.JFrame {
      * Creates new form Intentando
      */
     public Intentando() {
+        
         initComponents();
     }
 
@@ -236,11 +241,32 @@ public class Intentando extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Intentando.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
+        
+       
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Intentando().setVisible(true);
+                Usuario n1 = new Usuario("n", "n");
+                
+                JTextField username = new JTextField();
+                JTextField password = new JPasswordField();
+                Object[] message = {
+                    "Username:", username,
+                    "Password:", password,};
+                
+                int option = JOptionPane.showConfirmDialog(null, message, "Login", JOptionPane.OK_CANCEL_OPTION);
+                if (option == JOptionPane.OK_OPTION) {
+                    if (username.getText().equals(n1.getUser()) && password.getText().equals(n1.getPass())) {
+                        new Intentando().setVisible(true);
+                    } else {
+                        System.out.println("login failed");
+                    }
+                } else {
+                    System.out.println("Login canceled");
+                }
+                
             }
         });
     }
