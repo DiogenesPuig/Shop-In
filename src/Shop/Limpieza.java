@@ -12,7 +12,7 @@ package Shop;
 public class Limpieza extends Producto {
 
     private int cantDeUsos;
-    
+
     public Limpieza(int cantDeUsos, String nombre, int precioUnit, int precio, String code, int cantidad, boolean descuento) {
         super(nombre, precioUnit, precio, code, cantidad, descuento);
         this.cantDeUsos = cantDeUsos;
@@ -28,9 +28,29 @@ public class Limpieza extends Producto {
 
     @Override
     public void validarDescuento() {
-        if (super.descuento) {
-            int precio = super.precioUnit - (super.precioUnit / 4);
+        if (super.cantidad >= 3) {
+            super.descuento = true;
+        } else {
+            super.descuento = false;
         }
+    }
+
+    @Override
+    public void aplicarDescuento() {
+        if (descuento) {
+            if (super.cantidad % 3 == 0 && super.cantidad >= 3) {
+                super.precio = super.precio - (super.precioUnit * (super.cantidad / 3));
+            }
+
+            int i;
+
+            for (i = 0; super.cantidad % 3 == 0; i++) {
+                super.cantidad--;
+            }
+            super.precio = (super.cantidad * super.precioUnit) + super.precioUnit * i;
+            //hacer q cada 3 objetos page x 2
+        }
+        //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
