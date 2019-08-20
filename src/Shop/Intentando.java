@@ -5,6 +5,9 @@
  */
 package Shop;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -15,14 +18,12 @@ import javax.swing.JTextField;
  */
 public class Intentando extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Intentando
-     */
-    public Intentando() {
-        
-        initComponents();
-    }
+    public Usuario n1;
 
+    /* Creates new form Intentando*/
+    public Intentando() {
+        a();
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -208,7 +209,13 @@ public class Intentando extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here://
+        jButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setVisible(false);
+            }
+        });
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -241,32 +248,18 @@ public class Intentando extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Intentando.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        
-        
-       
-        
+
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            public void Correr() {
+               
+            }
+
+            
+
+            @Override
             public void run() {
-                Usuario n1 = new Usuario("n", "n");
-                
-                JTextField username = new JTextField();
-                JTextField password = new JPasswordField();
-                Object[] message = {
-                    "Username:", username,
-                    "Password:", password,};
-                
-                int option = JOptionPane.showConfirmDialog(null, message, "Login", JOptionPane.OK_CANCEL_OPTION);
-                if (option == JOptionPane.OK_OPTION) {
-                    if (username.getText().equals(n1.getUser()) && password.getText().equals(n1.getPass())) {
-                        new Intentando().setVisible(true);
-                    } else {
-                        System.out.println("login failed");
-                    }
-                } else {
-                    System.out.println("Login canceled");
-                }
-                
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
             }
         });
     }
@@ -288,4 +281,24 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+    private void a() {
+        Usuario n1 = new Usuario("n", "n");
+        JTextField username = new JTextField();
+        JTextField password = new JPasswordField();
+        Object[] message = {
+            "Username:", username,
+            "Password:", password,};
+
+        int option = JOptionPane.showConfirmDialog(null, message, "Login", JOptionPane.OK_CANCEL_OPTION);
+        if (option == JOptionPane.OK_OPTION) {
+            if (username.getText().equals(n1.getUser()) && password.getText().equals(n1.getPass())) {
+                initComponents();
+            } else {
+                System.out.println("login failed");
+            }
+        } else {
+            System.out.println("Login cancelled");
+        }
+    }
 }

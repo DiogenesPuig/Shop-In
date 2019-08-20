@@ -18,6 +18,11 @@ public class Usuario {
         this.user = user;
         this.pass = pass;
     }
+    
+    public Usuario (){
+        this.user="n";
+        this.pass="n";
+    }
 
     public String getUser() {
         return user;
