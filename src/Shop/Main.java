@@ -7,7 +7,7 @@ package Shop;
 
 /**
  *
- * @author diogenes
+ * @author diogenes and thiago
  */
 public class Main {
 
