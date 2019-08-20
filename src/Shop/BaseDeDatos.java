@@ -5,10 +5,10 @@
  */
 package Shop;
 
+
 /**
  *
  * @author diogenes
  */
 public class BaseDeDatos {
-    
 }

@@ -34,12 +34,14 @@ public class Alimentos extends Producto {
 
     @Override
     public void aplicarDescuento() {
-        super.aplicarDescuento(); //To change body of generated methods, choose Tools | Templates.
+        if(super.descuento){
+            super.precio = super.precio - super.precio/10; 
+        }
     }
 
     @Override
     public void validarDescuento() {
-        super.validarDescuento(); //To change body of generated methods, choose Tools | Templates.
+        super.descuento = true;
     }
     
     
