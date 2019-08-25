@@ -4,6 +4,16 @@
  * and open the template in the editor.
  */
 package Shop;
+import org.json.simple.*;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Iterator;
 
 /**
  *
@@ -16,16 +26,32 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        /*Ropa r1 = new Ropa("S","camisa",30,30,"123",5,true);
-        
-        r1.validarDescuento();
-        System.out.println(r1.isDescuento());
-        System.out.println(r1.getPrecio() + "hola");
-        r1.aplicarDescuento();
-        System.out.println(r1.getPrecio());
-        */
-        BaseDeDatos n1 = new BaseDeDatos();
-        
+        JSONParser parser = new JSONParser();
+
+        try (Reader reader = new FileReader("/home/diogenes/Escritorio/Shop-in/productos.json")) {
+
+            JSONObject jsonObject = (JSONObject) parser.parse(reader);
+            System.out.println(jsonObject);
+
+            String name = (String) jsonObject.get("nombre");
+            System.out.println(name);
+
+            long age = (Long) jsonObject.get("codigo");
+            System.out.println(age);
+
+            // loop array
+            JSONArray msg = (JSONArray) jsonObject.get("messages");
+            Iterator<String> iterator = msg.iterator();
+            while (iterator.hasNext()) {
+                System.out.println(iterator.next());
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
     }
-    
+
 }
