@@ -5,6 +5,9 @@
  */
 package Shop;
 
+import javax.swing.JOptionPane;
+import sql.MetodosBDD;
+
 /**
  *
  * @author diogenes
@@ -18,6 +21,8 @@ public class frm_register extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
     }
+
+    MetodosBDD metodos = new MetodosBDD();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -132,7 +137,14 @@ public class frm_register extends javax.swing.JFrame {
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         // TODO add your handling code here:
-        
+        int i = metodos.guardar(txtNombre.getText(), txtApellido.getText(), txtCorreo.getText(), txtPass.getText());
+
+        if (i > 0) {
+            JOptionPane.showMessageDialog(this, "Registro exitoso");
+        } else {
+            JOptionPane.showMessageDialog(this, "Ocurrio un error vuelva a intentarlo");
+
+        }
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     /**
