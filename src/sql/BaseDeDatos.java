@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Shop;
+package sql;
 
 import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
@@ -20,7 +20,7 @@ public class BaseDeDatos {
     public static String contraseña = "";
     public static String clase = "com.mysql.jdbc.Driver";
 
-    public Connection conexion() {
+    public static Connection conectar() {
         Connection conexion = null;
         try {
             Class.forName("clase");
