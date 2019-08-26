@@ -37,14 +37,37 @@ public class MetodosBDD {
             sentencia_preparada.setString(2, apellido);
             sentencia_preparada.setString(3, correo);
             sentencia_preparada.setString(4, pass);
-
             resultado = sentencia_preparada.executeUpdate();
             sentencia_preparada.close();
 
+            conexion.close();
         } catch (Exception e) {
             System.out.println(e);
         }
         return resultado;
+    }
+
+    public static String buscarNombre(String correo) {
+
+        String busqueda_nombre = null;
+        Connection conexion = null;
+        try {
+            conexion = BaseDeDatos.conectar();
+            String sentencia_buscar = ("SELECT nombre,apellido FROM usuarios WHERE correo = '" + correo + "'");
+            sentencia_preparada = conexion.prepareStatement(sentencia_buscar);
+            resultado = sentencia_preparada.executeQuery();
+
+            if (resultado.next()) {
+                String nombre = resultado.getString("nombre");
+                String apellido = resultado.getString("apellido");
+                busqueda_nombre = nombre + " " + apellido;
+
+            }
+            conexion.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return busqueda_nombre;
     }
 
 }
