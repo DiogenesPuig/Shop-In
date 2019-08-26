@@ -5,7 +5,7 @@
  */
 package Shop;
 
-import java.sql.Connection;
+import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
 import javax.swing.JOptionPane;
 
@@ -15,16 +15,21 @@ import javax.swing.JOptionPane;
  */
 public class BaseDeDatos {
 
-    Connection conect = null;
+    public static String url = "jdbc:mysql://localhost/usuarios";
+    public static String usuario = "root";
+    public static String contraseña = "";
+    public static String clase = "com.mysql.jdbc.Driver";
 
     public Connection conexion() {
+        Connection conexion = null;
         try {
-            Class.forName("org.gjt.mm.mysql.Driver");
-            conect = DriverManager.getConnection("jdbc:mysql://localhost/usuarios", "root", "");
+            Class.forName("clase");
+            conexion = (Connection) DriverManager.getConnection(url, usuario, contraseña);
+            System.out.println("conexion exitosa");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "error" + e);
         }
-        return conect;
+        return conexion;
     }
 }
 /*import com.mysql.jdbc.PreparedStatement;
