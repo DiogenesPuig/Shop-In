@@ -76,7 +76,7 @@ public class MetodosBDD {
         try {
             conexion = BaseDeDatos.conectar();
             String sentecia_buscar_usuario = "SELECT nombre,correo,pass FROM usuario WHERE correo = '" + correo + "' && pass = '" + pass + "'";
-            sentencia_preparada = conexion.prepareStatement(sentencia_buscar_usuario);
+            sentencia_preparada = conexion.prepareStatement(sentecia_buscar_usuario);
             resultado = sentencia_preparada.executeQuery();
             if (resultado.next()) {
                 busqueda_usuario = "usuario encontrado";
