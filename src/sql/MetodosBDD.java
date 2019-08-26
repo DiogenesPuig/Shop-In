@@ -70,4 +70,24 @@ public class MetodosBDD {
         return busqueda_nombre;
     }
 
+    public static String buscarUsuarioRegistrado(String correo, String pass) {
+        String busqueda_usuario = null;
+        Connection conexion = null;
+        try {
+            conexion = BaseDeDatos.conectar();
+            String sentecia_buscar_usuario = "SELECT nombre,correo,pass FROM usuario WHERE correo = '" + correo + "' && pass = '" + pass + "'";
+            sentencia_preparada = conexion.prepareStatement(sentencia_buscar_usuario);
+            resultado = sentencia_preparada.executeQuery();
+            if (resultado.next()) {
+                busqueda_usuario = "usuario encontrado";
+            } else {
+                busqueda_usuario = "usuario no encontrado";
+            }
+            conexion.close();
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return busqueda_usuario;
+    }
 }
