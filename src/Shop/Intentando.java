@@ -7,13 +7,13 @@ package Shop;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 /**
- *
  * @author diogenes
  */
 public class Intentando extends javax.swing.JFrame {
@@ -24,6 +24,7 @@ public class Intentando extends javax.swing.JFrame {
     public Intentando() {
         a();
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,7 +36,7 @@ public class Intentando extends javax.swing.JFrame {
 
         jLabel5 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        lbl_estUs = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
@@ -164,8 +165,8 @@ public class Intentando extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 500));
 
-        jLabel1.setText("Usuario Conectado");
-        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
+        lbl_estUs.setText("Usuario Conectado");
+        lbl_estUs.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
 
         jButton1.setText("Cerrar Sesion");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -189,21 +190,21 @@ public class Intentando extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
+                    .addComponent(lbl_estUs, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
+                        .addGap(20, 20, 20)
+                        .addComponent(lbl_estUs, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(4, 4, 4)
+                        .addGap(39, 39, 39)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
@@ -257,7 +258,7 @@ public class Intentando extends javax.swing.JFrame {
         jTabbedPane1.setToolTipText("ROPA");
         jTabbedPane1.setName(""); // NOI18N
 
-        jLabel97.setText("jLabel8");
+        jLabel97.setText("$800");
         jLabel97.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel97.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -297,7 +298,7 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel100.setText("jLabel8");
+        jLabel100.setText(" $500");
         jLabel100.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel100.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -350,7 +351,7 @@ public class Intentando extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        jLabel102.setText("jLabel8");
+        jLabel102.setText("$1000");
         jLabel102.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel102.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -395,7 +396,7 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel104.setText("jLabel8");
+        jLabel104.setText("$900");
         jLabel104.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel104.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -435,7 +436,7 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel106.setText("jLabel8");
+        jLabel106.setText("$1600");
         jLabel106.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel106.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -1276,12 +1277,12 @@ public class Intentando extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here://
-        jButton1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-            }
-        });
+        //jButton1.addActionListener(new ActionListener() {
+        //    @Override
+        //    public void actionPerformed(ActionEvent e) {
+        //        setVisible(false);
+        //    }
+        //});
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -1326,10 +1327,8 @@ public class Intentando extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void Correr() {
-               
-            }
 
-            
+            }
 
             @Override
             public void run() {
@@ -1387,7 +1386,6 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JButton jButton97;
     private javax.swing.JButton jButton98;
     private javax.swing.JButton jButton99;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;
@@ -1431,7 +1429,7 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel97;
+    public javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
@@ -1464,10 +1462,21 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
+    public javax.swing.JLabel lbl_estUs;
     // End of variables declaration//GEN-END:variables
 
     private void a() {
-        Usuario n1 = new Usuario("n", "n");
+        System.out.println("holo");
+        initComponents();
+        ImageIcon icon;
+        icon = new ImageIcon("remera.jpg");
+        jLabel100.setIcon(icon);
+        ImageIcon icon2;
+        icon2 = new ImageIcon("pantal.jpg");
+        jLabel97.setIcon(icon2);
+        
+
+        /*Usuario n1 = new Usuario("n", "n");
         JTextField username = new JTextField();
         JTextField password = new JPasswordField();
         Object[] message = {
@@ -1483,6 +1492,6 @@ public class Intentando extends javax.swing.JFrame {
             }
         } else {
             System.out.println("Login cancelled");
-        }
+        }*/
     }
 }
