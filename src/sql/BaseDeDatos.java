@@ -23,7 +23,7 @@ public class BaseDeDatos {
     public static Connection conectar() {
         Connection conexion = null;
         try {
-            Class.forName("clase");
+            Class.forName(clase);
             conexion = (Connection) DriverManager.getConnection(url, usuario, contraseña);
             System.out.println("conexion exitosa");
         } catch (Exception e) {
