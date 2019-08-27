@@ -24,6 +24,7 @@ public class Intentando extends javax.swing.JFrame {
     public Intentando() {
         a();
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -45,6 +46,7 @@ public class Intentando extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -58,7 +60,7 @@ public class Intentando extends javax.swing.JFrame {
         jPanel41 = new javax.swing.JPanel();
         jLabel100 = new javax.swing.JLabel();
         jButton92 = new javax.swing.JButton();
-        jLabel101 = new javax.swing.JLabel();
+        jLabel101 = new javax.swing.JLabel<>();
         jButton93 = new javax.swing.JButton();
         filler4 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jPanel42 = new javax.swing.JPanel();
@@ -213,13 +215,15 @@ public class Intentando extends javax.swing.JFrame {
 
         jLabel3.setText("Total :");
 
-        jLabel4.setText("Carrito");
+        jLabel4.setText("CARRITO");
 
         jLabel6.setText("Ahorrado:");
         jLabel6.setMaximumSize(new java.awt.Dimension(45, 15));
         jLabel6.setMinimumSize(new java.awt.Dimension(45, 15));
 
         jLabel7.setText("0");
+
+        jLabel1.setText("...");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -232,23 +236,29 @@ public class Intentando extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 172, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                .addGap(18, 18, 18))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(241, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 276, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3))
@@ -312,6 +322,11 @@ public class Intentando extends javax.swing.JFrame {
         jLabel101.setText("0");
 
         jButton93.setText("+");
+        jButton93.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton93ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
         jPanel41.setLayout(jPanel41Layout);
@@ -351,7 +366,7 @@ public class Intentando extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        jLabel102.setText("$1000");
+        jLabel102.setText("$100");
         jLabel102.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel102.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -1297,6 +1312,10 @@ public class Intentando extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton94ActionPerformed
 
+    private void jButton93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton93ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton93ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1386,8 +1405,9 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JButton jButton97;
     private javax.swing.JButton jButton98;
     private javax.swing.JButton jButton99;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel100;
-    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel<int> jLabel101;
     private javax.swing.JLabel jLabel102;
     private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel104;
@@ -1469,12 +1489,20 @@ public class Intentando extends javax.swing.JFrame {
         System.out.println("holo");
         initComponents();
         ImageIcon icon;
-        icon = new ImageIcon("remera.jpg");
+        icon = new ImageIcon("Imagenes/remera.jpg");
         jLabel100.setIcon(icon);
         ImageIcon icon2;
-        icon2 = new ImageIcon("pantal.jpg");
+        icon2 = new ImageIcon("Imagenes/Pantal.jpg");
         jLabel97.setIcon(icon2);
-        
+        ImageIcon icon3;
+        icon3 = new ImageIcon("Imagenes/medias.jpg");
+        jLabel102.setIcon(icon3);
+        ImageIcon icon4;
+        icon4 = new ImageIcon("Imagenes/campera.jpg");
+        jLabel106.setIcon(icon4);
+        ImageIcon icon5;
+        icon5 = new ImageIcon("Imagenes/zapatillas.jpg");
+        jLabel106.setIcon(icon5);
 
         /*Usuario n1 = new Usuario("n", "n");
         JTextField username = new JTextField();
