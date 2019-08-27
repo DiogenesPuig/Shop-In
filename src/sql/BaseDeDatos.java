@@ -15,9 +15,9 @@ import javax.swing.JOptionPane;
  */
 public class BaseDeDatos {
 
-    public static String url = "jdbc:mysql://localhost/usuarios";
+    public static String url = "jdbc:mysql://localhost/login";
     public static String usuario = "root";
-    public static String contraseña = "";
+    public static String contraseña = "admin";
     public static String clase = "com.mysql.jdbc.Driver";
 
     public static Connection conectar() {
