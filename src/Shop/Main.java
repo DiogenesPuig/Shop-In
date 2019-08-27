@@ -22,8 +22,9 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Intentando vent = new Intentando();
+        //vent.setVisible(true);
         frm_menu.main(args);
-
     }
 
 }
