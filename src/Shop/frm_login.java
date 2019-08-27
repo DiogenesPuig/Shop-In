@@ -5,6 +5,9 @@
  */
 package Shop;
 
+import javax.swing.JOptionPane;
+import sql.MetodosBDD;
+
 /**
  *
  * @author diogenes
@@ -19,6 +22,7 @@ public class frm_login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
 
+    MetodosBDD metodos = new MetodosBDD();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -60,6 +64,11 @@ public class frm_login extends javax.swing.JFrame {
         jLabel3.setText("Iniciar Sesion!");
 
         btnGo.setText("Go!");
+        btnGo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGoActionPerformed(evt);
+            }
+        });
 
         btnRegresar.setText("Regresar");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
@@ -131,6 +140,29 @@ public class frm_login extends javax.swing.JFrame {
     private void txtPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPassActionPerformed
+
+    private void btnGoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGoActionPerformed
+        // TODO add your handling code here:
+        String busqueda_usuario = metodos.buscarUsuarioRegistrado(txtCorreo.getText(),txtPass.getText());
+        
+        if(txtCorreo.getText().equals("root") && txtPass.getText().equals("root")){
+            JOptionPane.showMessageDialog(this,"iniciaste sesion como administrador");
+        }else if(busqueda_usuario.equals("usuario encontrado")){
+          String busqueda_nombre =  metodos.buscarNombre(txtCorreo.getText());
+          JOptionPane.showMessageDialog(this, "Bienvenido(a) \n " + busqueda_nombre);
+          // Tienda tienda = new tienda();
+          // tienda.setVisible(true);
+          //tienda.lblNombre.setText(busqueda_nombre);
+          //
+          /*agregar la ventana principal y colocar en el label correspondiente la informacion necesaria
+          nota: hay q hacer q la label sea publica !!!
+          repetir en el modo de administrador :D
+          */
+          this.dispose();
+        }else{
+            JOptionPane.showMessageDialog(this, "Usuario no encontrado");
+        }
+    }//GEN-LAST:event_btnGoActionPerformed
 
     /**
      * @param args the command line arguments
