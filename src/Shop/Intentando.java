@@ -24,6 +24,12 @@ public class Intentando extends javax.swing.JFrame {
     public Intentando() {
         a();
     }
+    Ropa remera = new Ropa("m","m",500,500,"333344",0,false);
+    Ropa pantalon = new Ropa("m","m",500,500,"333344",0,false);
+    Ropa medias = new Ropa("m","m",500,500,"333344",0,false);
+    Ropa campera = new Ropa("m","m",500,500,"333344",0,false);
+    Ropa zapatillas = new Ropa("39","m",500,500,"333344",0,false);
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
