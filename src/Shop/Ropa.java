@@ -10,14 +10,13 @@ package Shop;
  * @author diogenes
  */
 public class Ropa extends Producto {
+
     private String talle;
 
-    public Ropa(String talle, String nombre, int precioUnit, String code, int cantidad, boolean descuento) {
-        super(nombre, precioUnit, code, cantidad, descuento);
+    public Ropa(String talle, String nombre, int precioUnit, int precio, String code, int cantidad, boolean descuento) {
+        super(nombre, precioUnit, precio, code, cantidad, descuento);
         this.talle = talle;
     }
-
-    
 
     public String getTalle() {
         return talle;
@@ -29,8 +28,23 @@ public class Ropa extends Producto {
 
     @Override
     public void validarDescuento() {
-        if(super.descuento){
-            int precio = super.precioUnit - (super.precioUnit/4);  
+        if(super.cantidad>=2){
+            super.descuento = true;
+        }else{
+            super.descuento = false;
+        }
+    }
+
+    @Override
+    public void aplicarDescuento() {
+        int cantprob = super.cantidad;
+        if (super.descuento) {
+            if (super.cantidad % 2 == 0) {
+                super.precio = super.precio / 2;
+            }else{
+                super.precio = ((super.precio - super.precioUnit)/2)+super.precioUnit ;
+            }
+            
         }
     }
 
@@ -43,7 +57,10 @@ public class Ropa extends Producto {
     public void sumarProducto() {
         super.sumarProducto(); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return super.toString() + " La talla de la ropa es= " + talle; //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

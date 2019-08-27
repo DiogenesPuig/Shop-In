@@ -13,6 +13,7 @@ public class Producto {
 
     private String nombre;
     protected int precioUnit;
+    protected int precio;
     private String code;
     protected int cantidad;
     protected boolean descuento;
@@ -29,14 +30,16 @@ public class Producto {
         descuento = false;
     }
 
-    public Producto(String nombre, int precioUnit, String code, int cantidad, boolean descuento) {
+    public Producto(String nombre, int precioUnit, int precio, String code, int cantidad, boolean descuento) {
         this.nombre = nombre;
         this.precioUnit = precioUnit;
         this.code = code;
         this.cantidad = cantidad;
+        this.precio = precio;
         this.descuento = descuento;
+        validarDescuento();
+        calcularTotal();
     }
-    
 
     public String getNombre() {
         return nombre;
@@ -52,6 +55,14 @@ public class Producto {
 
     public void setPrecioUnit(int precioUnit) {
         this.precioUnit = precioUnit;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
     }
 
     public String getCode() {
@@ -87,18 +98,24 @@ public class Producto {
     }
 
     public void validarDescuento() {
-        if (cantidad > 2) {
+        if (cantidad >= 2) {
             descuento = true;
-        } else {
         }
+    }
+
+    public void aplicarDescuento() {
+        if (descuento) {
+            precio = precioUnit - (precioUnit / 4);
+        }
+    }
+    
+    public void calcularTotal(){
+        precio = precio*cantidad;
     }
 
     @Override
     public String toString() {
-        return "Producto de nombre=" + nombre + "su precio Unitario es=" + precioUnit + ",su codigo de barra es=" + code + ",la cantidad de productos selecionados es=" + cantidad + ", se aplica el descuento=" + descuento + '}';
+        return " Producto de nombre=" + nombre + "su precio Unitario es=" + precioUnit + ",su codigo de barra es=" + code + ",la cantidad de productos selecionados es=" + cantidad + ", se aplica el descuento=" + descuento + '}';
     }
 
-    
-    
-    
 }

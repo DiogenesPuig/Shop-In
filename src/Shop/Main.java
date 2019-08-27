@@ -5,6 +5,12 @@
  */
 package Shop;
 
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Iterator;
+
 /**
  *
  * @author diogenes and thiago
@@ -16,6 +22,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        frm_menu.main(args);
+
     }
-    
+
 }
