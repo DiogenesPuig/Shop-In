@@ -147,6 +147,7 @@ public class frm_login extends javax.swing.JFrame {
         
         if(txtCorreo.getText().equals("root") && txtPass.getText().equals("root")){
             JOptionPane.showMessageDialog(this,"iniciaste sesion como administrador");
+            
         }else if(busqueda_usuario.equals("usuario encontrado")){
           String busqueda_nombre =  metodos.buscarNombre(txtCorreo.getText());
           JOptionPane.showMessageDialog(this, "Bienvenido(a) \n " + busqueda_nombre);
