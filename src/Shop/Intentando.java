@@ -999,7 +999,7 @@ public class Intentando extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        jLabel111.setText("jLabel8");
+        jLabel111.setText("$ 69");
         jLabel111.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel111.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -1079,7 +1079,7 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel115.setText("jLabel8");
+        jLabel115.setText("$169");
         jLabel115.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel115.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -1119,7 +1119,7 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel117.setText("jLabel8");
+        jLabel117.setText("$ 84");
         jLabel117.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel117.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -1159,7 +1159,7 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel119.setText("jLabel8");
+        jLabel119.setText("$999");
         jLabel119.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel119.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -1473,7 +1473,9 @@ public class Intentando extends javax.swing.JFrame {
     private void a() {
         System.out.println("holo");
         initComponents();
+        
         //Imagenes Ropa
+        
         ImageIcon icon;
         icon = new ImageIcon("Imagenes/remera.jpg");
         jLabel100.setIcon(icon);
@@ -1489,7 +1491,9 @@ public class Intentando extends javax.swing.JFrame {
         ImageIcon icon5;
         icon5 = new ImageIcon("Imagenes/zapatillas.jpg");
         jLabel104.setIcon(icon5);
+        
         //Imagenes Comida
+
         ImageIcon iconb1;
         iconb1 = new ImageIcon("Imagenes/carne.jpg");
         jLabel125.setIcon(iconb1);
@@ -1514,6 +1518,30 @@ public class Intentando extends javax.swing.JFrame {
         ImageIcon iconb8;
         iconb8 = new ImageIcon("Imagenes/zanahorias.jpg");
         jLabel137.setIcon(iconb8);
+        
+        //Imagenes Limpieza
+        
+        ImageIcon iconc;
+        iconc = new ImageIcon("Imagenes/papel-higienico.jpg");
+        jLabel109.setIcon(iconc);
+        ImageIcon iconc2;
+        iconc2 = new ImageIcon("Imagenes/trapo-de-piso.jpg");
+        jLabel98.setIcon(iconc2);
+        ImageIcon iconc3;
+        iconc3 = new ImageIcon("Imagenes/detergente.jpg");
+        jLabel111.setIcon(iconc3);
+        ImageIcon iconc4;
+        iconc4 = new ImageIcon("Imagenes/lavandina.jpg");
+        jLabel115.setIcon(iconc4);
+        ImageIcon iconc5;
+        iconc5 = new ImageIcon("Imagenes/jabon.jpg");
+        jLabel113.setIcon(iconc5);
+        ImageIcon iconc6;
+        iconc6 = new ImageIcon("Imagenes/escoba.jpg");
+        jLabel117.setIcon(iconc6);
+        ImageIcon iconc7;
+        iconc7 = new ImageIcon("Imagenes/limpia-vidrios.jpg");
+        jLabel119.setIcon(iconc7);
         
 
         /*Usuario n1 = new Usuario("n", "n");
