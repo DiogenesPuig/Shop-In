@@ -24,11 +24,11 @@ public class Intentando extends javax.swing.JFrame {
     public Intentando() {
         a();
     }
-    Ropa remera = new Ropa("m","m",500,500,"333344",0,false);
-    Ropa pantalon = new Ropa("m","m",500,500,"333344",0,false);
-    Ropa medias = new Ropa("m","m",500,500,"333344",0,false);
-    Ropa campera = new Ropa("m","m",500,500,"333344",0,false);
-    Ropa zapatillas = new Ropa("39","m",500,500,"333344",0,false);
+    Ropa remera = new Ropa("m","remera",500,500,"333344",0,false);
+    Ropa pantalon = new Ropa("m","pantalon",500,500,"334400",0,false);
+    Ropa medias = new Ropa("m","medias",500,500,"333145",0,true);
+    Ropa campera = new Ropa("m","campera",500,500,"334344",0,false);
+    Ropa zapatillas = new Ropa("39","zapatillas",500,500,"334414",0,false);
     
 
     /**
@@ -357,7 +357,7 @@ public class Intentando extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        jLabel102.setText("$1000");
+        jLabel102.setText("$100");
         jLabel102.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel102.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -693,7 +693,6 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel135.setText("jLabel8");
         jLabel135.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel135.setMinimumSize(new java.awt.Dimension(120, 120));
 
@@ -1474,12 +1473,47 @@ public class Intentando extends javax.swing.JFrame {
     private void a() {
         System.out.println("holo");
         initComponents();
+        //Imagenes Ropa
         ImageIcon icon;
-        icon = new ImageIcon("remera.jpg");
+        icon = new ImageIcon("Imagenes/remera.jpg");
         jLabel100.setIcon(icon);
         ImageIcon icon2;
-        icon2 = new ImageIcon("pantal.jpg");
+        icon2 = new ImageIcon("Imagenes/Pantal.jpg");
         jLabel97.setIcon(icon2);
+        ImageIcon icon3;
+        icon3 = new ImageIcon("Imagenes/medias.jpg");
+        jLabel102.setIcon(icon3);
+        ImageIcon icon4;
+        icon4 = new ImageIcon("Imagenes/campera.jpg");
+        jLabel106.setIcon(icon4);
+        ImageIcon icon5;
+        icon5 = new ImageIcon("Imagenes/zapatillas.jpg");
+        jLabel104.setIcon(icon5);
+        //Imagenes Comida
+        ImageIcon iconb1;
+        iconb1 = new ImageIcon("Imagenes/carne.jpg");
+        jLabel125.setIcon(iconb1);
+        ImageIcon iconb2;
+        iconb2 = new ImageIcon("Imagenes/pollo.jpg");
+        jLabel129.setIcon(iconb2);
+        ImageIcon iconb3;
+        iconb3 = new ImageIcon("Imagenes/pescado.jpg");
+        jLabel123.setIcon(iconb3);
+        ImageIcon iconb4;
+        iconb4 = new ImageIcon("Imagenes/cerdo.jpg");
+        jLabel131.setIcon(iconb4);
+        ImageIcon iconb5;
+        iconb5 = new ImageIcon("Imagenes/tomate.jpg");
+        jLabel127.setIcon(iconb5);
+        ImageIcon iconb6;
+        iconb6 = new ImageIcon("Imagenes/papa.jpg");
+        jLabel133.setIcon(iconb6);
+        ImageIcon iconb7;
+        iconb7 = new ImageIcon("Imagenes/lechuga.jpg");
+        jLabel135.setIcon(iconb7);
+        ImageIcon iconb8;
+        iconb8 = new ImageIcon("Imagenes/zanahorias.jpg");
+        jLabel137.setIcon(iconb8);
         
 
         /*Usuario n1 = new Usuario("n", "n");

@@ -487,7 +487,7 @@
                       <SubComponents>
                         <Component class="javax.swing.JLabel" name="jLabel102">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="$1000"/>
+                            <Property name="text" type="java.lang.String" value="$100"/>
                             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[120, 120]"/>
                             </Property>
@@ -1059,7 +1059,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JLabel" name="jLabel135">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jLabel8"/>
                         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[120, 120]"/>
                         </Property>
