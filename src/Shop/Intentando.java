@@ -20,6 +20,7 @@ public class Intentando extends javax.swing.JFrame {
 
     public Usuario n1;
 
+    
     /* Creates new form Intentando*/
     public Intentando() {
         a();
@@ -1466,7 +1467,6 @@ public class Intentando extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void a() {
-        System.out.println("holo");
         initComponents();
         ImageIcon icon;
         icon = new ImageIcon("remera.jpg");
@@ -1474,24 +1474,6 @@ public class Intentando extends javax.swing.JFrame {
         ImageIcon icon2;
         icon2 = new ImageIcon("pantal.jpg");
         jLabel97.setIcon(icon2);
-        
-
-        /*Usuario n1 = new Usuario("n", "n");
-        JTextField username = new JTextField();
-        JTextField password = new JPasswordField();
-        Object[] message = {
-            "Username:", username,
-            "Password:", password,};
-
-        int option = JOptionPane.showConfirmDialog(null, message, "Login", JOptionPane.OK_CANCEL_OPTION);
-        if (option == JOptionPane.OK_OPTION) {
-            if (username.getText().equals(n1.getUser()) && password.getText().equals(n1.getPass())) {
-                initComponents();
-            } else {
-                System.out.println("login failed");
-            }
-        } else {
-            System.out.println("Login cancelled");
-        }*/
+       
     }
 }
