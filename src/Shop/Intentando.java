@@ -29,6 +29,24 @@ public class Intentando extends javax.swing.JFrame {
     Ropa medias = new Ropa("m","medias",500,500,"333145",0,true);
     Ropa campera = new Ropa("m","campera",500,500,"334344",0,false);
     Ropa zapatillas = new Ropa("39","zapatillas",500,500,"334414",0,false);
+    // ---------------------------Alimentos-------------------------------------
+    Alimentos carne = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos pollo = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos pescado = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos cerdo = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos tomate = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos papa = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos lechuga = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos zanahoria = new Alimentos("","carne",100,1,"",0,false);
+    //---------------------------Limpieza---------------------------------------
+    Limpieza Papel_Higienico = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Trapo_De_Piso = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Detergente = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Lavandina = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Jabon = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Escoba = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Limpia_Vidrios = new Limpieza(10,"",1,1,"",0,false);
+    
     
 
     /**
