@@ -29,6 +29,24 @@ public class Intentando extends javax.swing.JFrame {
     Ropa medias = new Ropa("m","medias",500,500,"333145",0,true);
     Ropa campera = new Ropa("m","campera",500,500,"334344",0,false);
     Ropa zapatillas = new Ropa("39","zapatillas",500,500,"334414",0,false);
+    // ---------------------------Alimentos-------------------------------------
+    Alimentos carne = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos pollo = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos pescado = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos cerdo = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos tomate = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos papa = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos lechuga = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos zanahoria = new Alimentos("","carne",100,1,"",0,false);
+    //---------------------------Limpieza---------------------------------------
+    Limpieza Papel_Higienico = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Trapo_De_Piso = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Detergente = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Lavandina = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Jabon = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Escoba = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Limpia_Vidrios = new Limpieza(10,"",1,1,"",0,false);
+    
     
 
     /**
@@ -67,38 +85,38 @@ public class Intentando extends javax.swing.JFrame {
         filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jPanel40 = new javax.swing.JPanel();
         jLabel97 = new javax.swing.JLabel();
-        jButton90 = new javax.swing.JButton();
+        btnRestP = new javax.swing.JButton();
         jLabel99 = new javax.swing.JLabel();
-        jButton91 = new javax.swing.JButton();
+        btnSumP = new javax.swing.JButton();
         jPanel41 = new javax.swing.JPanel();
         jLabel100 = new javax.swing.JLabel();
-        jButton92 = new javax.swing.JButton();
+        btnRestR = new javax.swing.JButton();
         jLabel101 = new javax.swing.JLabel();
-        jButton93 = new javax.swing.JButton();
+        btnSumR = new javax.swing.JButton();
         filler4 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jPanel42 = new javax.swing.JPanel();
         jLabel102 = new javax.swing.JLabel();
-        jButton94 = new javax.swing.JButton();
+        btnRestM = new javax.swing.JButton();
         jLabel103 = new javax.swing.JLabel();
-        jButton95 = new javax.swing.JButton();
+        btnSumM = new javax.swing.JButton();
         jPanel43 = new javax.swing.JPanel();
         jLabel104 = new javax.swing.JLabel();
-        jButton96 = new javax.swing.JButton();
+        btnRestZ = new javax.swing.JButton();
         jLabel105 = new javax.swing.JLabel();
-        jButton97 = new javax.swing.JButton();
+        btnSumZ = new javax.swing.JButton();
         jPanel44 = new javax.swing.JPanel();
         jLabel106 = new javax.swing.JLabel();
-        jButton98 = new javax.swing.JButton();
+        btnRestCm = new javax.swing.JButton();
         jLabel107 = new javax.swing.JLabel();
-        jButton99 = new javax.swing.JButton();
+        btnSumCm = new javax.swing.JButton();
         jScrollPane5 = new javax.swing.JScrollPane();
         jPanel55 = new javax.swing.JPanel();
         filler8 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jPanel57 = new javax.swing.JPanel();
         jLabel125 = new javax.swing.JLabel();
-        jButton118 = new javax.swing.JButton();
+        btnRestC = new javax.swing.JButton();
         jLabel126 = new javax.swing.JLabel();
-        jButton119 = new javax.swing.JButton();
+        btnSumC = new javax.swing.JButton();
         filler9 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel1 = new javax.swing.JLabel();
         jPanel64 = new javax.swing.JPanel();
@@ -110,9 +128,9 @@ public class Intentando extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jPanel65 = new javax.swing.JPanel();
         jLabel141 = new javax.swing.JLabel();
-        jButton134 = new javax.swing.JButton();
+        btnRestPl = new javax.swing.JButton();
         jLabel142 = new javax.swing.JLabel();
-        jButton135 = new javax.swing.JButton();
+        btnSumPl = new javax.swing.JButton();
         filler12 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel10 = new javax.swing.JLabel();
         jPanel66 = new javax.swing.JPanel();
@@ -268,9 +286,11 @@ public class Intentando extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 500));
 
+        lbl_estUs.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         lbl_estUs.setText("Usuario Conectado");
         lbl_estUs.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
 
+        jButton1.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jButton1.setText("Cerrar Sesion");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -293,9 +313,10 @@ public class Intentando extends javax.swing.JFrame {
                 .addGap(23, 23, 23)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lbl_estUs, javax.swing.GroupLayout.DEFAULT_SIZE, 144, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 192, Short.MAX_VALUE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbl_estUs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 158, Short.MAX_VALUE)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -314,11 +335,18 @@ public class Intentando extends javax.swing.JFrame {
 
         jLabel2.setText("0");
 
+        jLabel3.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel3.setText("Total :");
 
+<<<<<<< HEAD
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("CARRITO");
+=======
+        jLabel4.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
+        jLabel4.setText("Carrito");
+>>>>>>> 1fa71624ef64c8bfc82c7527959346db3f82f56b
 
+        jLabel6.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel6.setText("Ahorrado:");
         jLabel6.setMaximumSize(new java.awt.Dimension(45, 15));
         jLabel6.setMinimumSize(new java.awt.Dimension(45, 15));
@@ -332,35 +360,34 @@ public class Intentando extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100))
             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(100, 100, 100))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -375,11 +402,11 @@ public class Intentando extends javax.swing.JFrame {
         jLabel97.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel97.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton90.setText("-");
+        btnRestP.setText("-");
 
         jLabel99.setText("0");
 
-        jButton91.setText("+");
+        btnSumP.setText("+");
 
         javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
         jPanel40.setLayout(jPanel40Layout);
@@ -387,11 +414,11 @@ public class Intentando extends javax.swing.JFrame {
             jPanel40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel40Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton90, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnRestP, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel99, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton91, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSumP, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
             .addGroup(jPanel40Layout.createSequentialGroup()
                 .addContainerGap()
@@ -406,8 +433,8 @@ public class Intentando extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel99, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton91, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton90))
+                    .addComponent(btnSumP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRestP))
                 .addContainerGap())
         );
 
@@ -415,16 +442,16 @@ public class Intentando extends javax.swing.JFrame {
         jLabel100.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel100.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton92.setText("-");
-        jButton92.addActionListener(new java.awt.event.ActionListener() {
+        btnRestR.setText("-");
+        btnRestR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton92ActionPerformed(evt);
+                btnRestRActionPerformed(evt);
             }
         });
 
         jLabel101.setText("0");
 
-        jButton93.setText("+");
+        btnSumR.setText("+");
 
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
         jPanel41.setLayout(jPanel41Layout);
@@ -432,11 +459,11 @@ public class Intentando extends javax.swing.JFrame {
             jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel41Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton92, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnRestR, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel101, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton93, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSumR, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(filler4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
@@ -455,8 +482,8 @@ public class Intentando extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel101, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton93, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton92))
+                            .addComponent(btnSumR, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnRestR))
                         .addContainerGap())
                     .addGroup(jPanel41Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -468,16 +495,16 @@ public class Intentando extends javax.swing.JFrame {
         jLabel102.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel102.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton94.setText("-");
-        jButton94.addActionListener(new java.awt.event.ActionListener() {
+        btnRestM.setText("-");
+        btnRestM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton94ActionPerformed(evt);
+                btnRestMActionPerformed(evt);
             }
         });
 
         jLabel103.setText("0");
 
-        jButton95.setText("+");
+        btnSumM.setText("+");
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
         jPanel42.setLayout(jPanel42Layout);
@@ -485,11 +512,11 @@ public class Intentando extends javax.swing.JFrame {
             jPanel42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel42Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton94, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnRestM, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel103, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton95, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSumM, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
             .addGroup(jPanel42Layout.createSequentialGroup()
                 .addContainerGap()
@@ -504,8 +531,8 @@ public class Intentando extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel103, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton95, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton94))
+                    .addComponent(btnSumM, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRestM))
                 .addContainerGap())
         );
 
@@ -513,11 +540,11 @@ public class Intentando extends javax.swing.JFrame {
         jLabel104.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel104.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton96.setText("-");
+        btnRestZ.setText("-");
 
         jLabel105.setText("0");
 
-        jButton97.setText("+");
+        btnSumZ.setText("+");
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
@@ -525,11 +552,11 @@ public class Intentando extends javax.swing.JFrame {
             jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel43Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton96, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnRestZ, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel105, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton97, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSumZ, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
             .addGroup(jPanel43Layout.createSequentialGroup()
                 .addContainerGap()
@@ -544,8 +571,8 @@ public class Intentando extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel105, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton97, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton96))
+                    .addComponent(btnSumZ, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRestZ))
                 .addContainerGap())
         );
 
@@ -553,11 +580,11 @@ public class Intentando extends javax.swing.JFrame {
         jLabel106.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel106.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton98.setText("-");
+        btnRestCm.setText("-");
 
         jLabel107.setText("0");
 
-        jButton99.setText("+");
+        btnSumCm.setText("+");
 
         javax.swing.GroupLayout jPanel44Layout = new javax.swing.GroupLayout(jPanel44);
         jPanel44.setLayout(jPanel44Layout);
@@ -565,11 +592,11 @@ public class Intentando extends javax.swing.JFrame {
             jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel44Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton98, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnRestCm, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel107, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton99, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnSumCm, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
             .addGroup(jPanel44Layout.createSequentialGroup()
                 .addContainerGap()
@@ -584,8 +611,8 @@ public class Intentando extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel107, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton99, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton98))
+                    .addComponent(btnSumCm, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRestCm))
                 .addContainerGap())
         );
 
@@ -635,16 +662,16 @@ public class Intentando extends javax.swing.JFrame {
         jLabel125.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel125.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton118.setText("+");
-        jButton118.addActionListener(new java.awt.event.ActionListener() {
+        btnRestC.setText("+");
+        btnRestC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton118ActionPerformed(evt);
+                btnRestCActionPerformed(evt);
             }
         });
 
         jLabel126.setText("0");
 
-        jButton119.setText("+");
+        btnSumC.setText("+");
 
         jLabel1.setText("$500");
 
@@ -656,11 +683,11 @@ public class Intentando extends javax.swing.JFrame {
                 .addGroup(jPanel57Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel57Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton118, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnRestC, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel126, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton119, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSumC, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29))
                     .addGroup(jPanel57Layout.createSequentialGroup()
                         .addGap(56, 56, 56)
@@ -688,8 +715,8 @@ public class Intentando extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel57Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel126, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton119, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton118))))
+                            .addComponent(btnSumC, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnRestC))))
                 .addContainerGap())
         );
 
@@ -757,16 +784,16 @@ public class Intentando extends javax.swing.JFrame {
         jLabel141.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel141.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton134.setText("+");
-        jButton134.addActionListener(new java.awt.event.ActionListener() {
+        btnRestPl.setText("+");
+        btnRestPl.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton134ActionPerformed(evt);
+                btnRestPlActionPerformed(evt);
             }
         });
 
         jLabel142.setText("0");
 
-        jButton135.setText("+");
+        btnSumPl.setText("+");
 
         jLabel10.setText("$490");
 
@@ -778,11 +805,11 @@ public class Intentando extends javax.swing.JFrame {
                 .addGroup(jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel65Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton134, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnRestPl, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel142, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton135, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSumPl, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29))
                     .addGroup(jPanel65Layout.createSequentialGroup()
                         .addGap(56, 56, 56)
@@ -810,8 +837,8 @@ public class Intentando extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel142, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton135, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton134))))
+                            .addComponent(btnSumPl, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnRestPl))))
                 .addContainerGap())
         );
 
@@ -1753,25 +1780,25 @@ public class Intentando extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton136ActionPerformed
 
-    private void jButton134ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton134ActionPerformed
+    private void btnRestPlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestPlActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton134ActionPerformed
+    }//GEN-LAST:event_btnRestPlActionPerformed
 
     private void jButton132ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton132ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton132ActionPerformed
 
-    private void jButton118ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton118ActionPerformed
+    private void btnRestCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestCActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton118ActionPerformed
+    }//GEN-LAST:event_btnRestCActionPerformed
 
-    private void jButton94ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton94ActionPerformed
+    private void btnRestMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestMActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton94ActionPerformed
+    }//GEN-LAST:event_btnRestMActionPerformed
 
-    private void jButton92ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton92ActionPerformed
+    private void btnRestRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestRActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton92ActionPerformed
+    }//GEN-LAST:event_btnRestRActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1814,6 +1841,20 @@ public class Intentando extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnRestC;
+    private javax.swing.JButton btnRestCm;
+    private javax.swing.JButton btnRestM;
+    private javax.swing.JButton btnRestP;
+    private javax.swing.JButton btnRestPl;
+    private javax.swing.JButton btnRestR;
+    private javax.swing.JButton btnRestZ;
+    private javax.swing.JButton btnSumC;
+    private javax.swing.JButton btnSumCm;
+    private javax.swing.JButton btnSumM;
+    private javax.swing.JButton btnSumP;
+    private javax.swing.JButton btnSumPl;
+    private javax.swing.JButton btnSumR;
+    private javax.swing.JButton btnSumZ;
     private javax.swing.Box.Filler filler10;
     private javax.swing.Box.Filler filler11;
     private javax.swing.Box.Filler filler12;
@@ -1835,16 +1876,12 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.Box.Filler filler8;
     private javax.swing.Box.Filler filler9;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton118;
-    private javax.swing.JButton jButton119;
     private javax.swing.JButton jButton120;
     private javax.swing.JButton jButton121;
     private javax.swing.JButton jButton122;
     private javax.swing.JButton jButton123;
     private javax.swing.JButton jButton132;
     private javax.swing.JButton jButton133;
-    private javax.swing.JButton jButton134;
-    private javax.swing.JButton jButton135;
     private javax.swing.JButton jButton136;
     private javax.swing.JButton jButton137;
     private javax.swing.JButton jButton138;
@@ -1867,16 +1904,6 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JButton jButton157;
     private javax.swing.JButton jButton158;
     private javax.swing.JButton jButton159;
-    private javax.swing.JButton jButton90;
-    private javax.swing.JButton jButton91;
-    private javax.swing.JButton jButton92;
-    private javax.swing.JButton jButton93;
-    private javax.swing.JButton jButton94;
-    private javax.swing.JButton jButton95;
-    private javax.swing.JButton jButton96;
-    private javax.swing.JButton jButton97;
-    private javax.swing.JButton jButton98;
-    private javax.swing.JButton jButton99;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
@@ -1940,7 +1967,7 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabel97;
+    public javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

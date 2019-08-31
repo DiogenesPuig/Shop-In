@@ -176,10 +176,11 @@
                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jButton1" max="32767" attributes="0"/>
-                      <Component id="lbl_estUs" pref="144" max="32767" attributes="0"/>
+                      <Component id="lbl_estUs" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="192" max="32767" attributes="0"/>
-                  <Component id="jTextField1" min="-2" pref="626" max="-2" attributes="0"/>
+                  <EmptySpace pref="158" max="32767" attributes="0"/>
+                  <Component id="jTextField1" min="-2" pref="623" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -206,6 +207,9 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lbl_estUs">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="14" style="3"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Usuario Conectado"/>
             <Property name="horizontalTextPosition" type="int" value="10"/>
           </Properties>
@@ -215,6 +219,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="14" style="3"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Cerrar Sesion"/>
           </Properties>
           <Events>
@@ -236,28 +243,28 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel3" max="32767" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jLabel2" min="-2" pref="51" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-              </Group>
               <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
-              <Group type="102" alignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel3" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" min="-2" pref="223" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" pref="51" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                          <Component id="jLabel6" min="-2" pref="106" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="jLabel7" min="-2" pref="52" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jScrollPane1" min="-2" pref="223" max="-2" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="jLabel6" min="-2" pref="106" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" pref="52" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="30" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="30" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -266,11 +273,11 @@
               <Group type="102" alignment="1" attributes="0">
                   <Component id="jLabel4" min="-2" pref="47" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" pref="261" max="32767" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" pref="267" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -290,17 +297,30 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="14" style="3"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Total :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
+<<<<<<< HEAD
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="text" type="java.lang.String" value="CARRITO"/>
+=======
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="14" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Carrito"/>
+>>>>>>> 1fa71624ef64c8bfc82c7527959346db3f82f56b
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Dialog" size="14" style="3"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Ahorrado:"/>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[45, 15]"/>
@@ -418,11 +438,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton90" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnRestP" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel99" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton91" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnSumP" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -440,8 +460,8 @@
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel99" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="jButton91" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="jButton90" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnSumP" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="btnRestP" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -463,7 +483,7 @@
                             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                           </AuxValues>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton90">
+                        <Component class="javax.swing.JButton" name="btnRestP">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
@@ -473,7 +493,7 @@
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton91">
+                        <Component class="javax.swing.JButton" name="btnSumP">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
@@ -487,11 +507,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton92" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnRestR" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel101" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton93" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnSumR" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="filler4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
@@ -513,8 +533,8 @@
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
                                               <Component id="jLabel101" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                              <Component id="jButton93" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                              <Component id="jButton92" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btnSumR" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                              <Component id="btnRestR" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                       </Group>
@@ -540,12 +560,12 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton92">
+                        <Component class="javax.swing.JButton" name="btnRestR">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton92ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestRActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel101">
@@ -553,7 +573,7 @@
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton93">
+                        <Component class="javax.swing.JButton" name="btnSumR">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
@@ -577,11 +597,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton94" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnRestM" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel103" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton95" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnSumM" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -599,8 +619,8 @@
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel103" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="jButton95" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="jButton94" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnSumM" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="btnRestM" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -619,12 +639,12 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton94">
+                        <Component class="javax.swing.JButton" name="btnRestM">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton94ActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestMActionPerformed"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel103">
@@ -632,7 +652,7 @@
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton95">
+                        <Component class="javax.swing.JButton" name="btnSumM">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
@@ -646,11 +666,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton96" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnRestZ" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel105" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton97" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnSumZ" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -668,8 +688,8 @@
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel105" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="jButton97" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="jButton96" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnSumZ" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="btnRestZ" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -688,7 +708,7 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton96">
+                        <Component class="javax.swing.JButton" name="btnRestZ">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
@@ -698,7 +718,7 @@
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton97">
+                        <Component class="javax.swing.JButton" name="btnSumZ">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
@@ -712,11 +732,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton98" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnRestCm" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel107" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton99" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnSumCm" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -734,8 +754,8 @@
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel107" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="jButton99" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="jButton98" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnSumCm" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="btnRestCm" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -754,7 +774,7 @@
                             </Property>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton98">
+                        <Component class="javax.swing.JButton" name="btnRestCm">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
@@ -764,7 +784,7 @@
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JButton" name="jButton99">
+                        <Component class="javax.swing.JButton" name="btnSumCm">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
@@ -878,11 +898,11 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton118" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnRestC" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel126" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton119" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnSumC" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -917,8 +937,8 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel126" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="jButton119" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Component id="jButton118" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnSumC" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="btnRestC" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -938,12 +958,12 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton118">
+                    <Component class="javax.swing.JButton" name="btnRestC">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton118ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestCActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel126">
@@ -951,7 +971,7 @@
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton119">
+                    <Component class="javax.swing.JButton" name="btnSumC">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
@@ -1086,11 +1106,11 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton134" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnRestPl" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel142" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton135" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnSumPl" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1125,8 +1145,8 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel142" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="jButton135" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Component id="jButton134" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnSumPl" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="btnRestPl" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -1146,12 +1166,12 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton134">
+                    <Component class="javax.swing.JButton" name="btnRestPl">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton134ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestPlActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel142">
@@ -1159,7 +1179,7 @@
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton135">
+                    <Component class="javax.swing.JButton" name="btnSumPl">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
