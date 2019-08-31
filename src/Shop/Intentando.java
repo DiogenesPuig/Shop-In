@@ -77,7 +77,6 @@ public class Intentando extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jLabel20 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -338,13 +337,8 @@ public class Intentando extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel3.setText("Total :");
 
-<<<<<<< HEAD
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("CARRITO");
-=======
         jLabel4.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel4.setText("Carrito");
->>>>>>> 1fa71624ef64c8bfc82c7527959346db3f82f56b
 
         jLabel6.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel6.setText("Ahorrado:");
@@ -352,9 +346,6 @@ public class Intentando extends javax.swing.JFrame {
         jLabel6.setMinimumSize(new java.awt.Dimension(45, 15));
 
         jLabel7.setText("0");
-
-        jLabel20.setText("jLabel20");
-        jScrollPane1.setViewportView(jLabel20);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1956,7 +1947,6 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
