@@ -338,13 +338,12 @@ public class Intentando extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel3.setText("Total :");
 
-<<<<<<< HEAD
+
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("CARRITO");
-=======
+        
         jLabel4.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel4.setText("Carrito");
->>>>>>> 1fa71624ef64c8bfc82c7527959346db3f82f56b
 
         jLabel6.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel6.setText("Ahorrado:");
