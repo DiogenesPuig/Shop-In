@@ -110,7 +110,13 @@ public class Producto {
     }
     
     public void calcularTotal(){
-        precio = precio*cantidad;
+        if (descuento){
+            aplicarDescuento();
+        }else{
+            precio = precio*cantidad;
+        }
+        
+        
     }
 
     @Override
