@@ -305,15 +305,10 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
-<<<<<<< HEAD
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="CARRITO"/>
-=======
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="14" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Carrito"/>
->>>>>>> 1fa71624ef64c8bfc82c7527959346db3f82f56b
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
@@ -338,13 +333,6 @@
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel20">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jLabel20"/>
-              </Properties>
-            </Component>
-          </SubComponents>
         </Container>
       </SubComponents>
     </Container>
