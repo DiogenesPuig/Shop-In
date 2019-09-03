@@ -64,6 +64,12 @@ public class Limpieza extends Producto {
     }
 
     @Override
+    public void calcularTotal() {
+        validarDescuento();
+        aplicarDescuento();
+    }
+    
+    @Override
     public String toString() {
         return super.toString() + " La cantidad de usos del producto es=" + cantDeUsos; //To change body of generated methods, choose Tools | Templates.
     }

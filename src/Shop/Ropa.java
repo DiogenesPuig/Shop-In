@@ -66,6 +66,12 @@ public class Ropa extends Producto {
     }
 
     @Override
+    public void calcularTotal() {
+        validarDescuento();
+        aplicarDescuento();
+    }
+    
+    @Override
     public String toString() {
         return super.toString() + " La talla de la ropa es= " + talle; //To change body of generated methods, choose Tools | Templates.
     }

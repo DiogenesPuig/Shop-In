@@ -44,5 +44,11 @@ public class Alimentos extends Producto {
         super.descuento = true;
     }
     
+    @Override
+    public void calcularTotal() {
+        validarDescuento();
+        aplicarDescuento();
+    }
+    
     
 }
