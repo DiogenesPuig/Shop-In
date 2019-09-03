@@ -1938,7 +1938,9 @@ public class Intentando extends javax.swing.JFrame {
     private void btnSumRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumRActionPerformed
         // TODO add your handling code here:
         remera.sumarProducto();
+        remera.calcularTotal();
         lblRemera.setText(Integer.toString(remera.getCantidad()));
+        txtCarrito.setText(remera.getNombre() + " " + remera.getPrecio() + "\n");
     }//GEN-LAST:event_btnSumRActionPerformed
 
     private void btnRestRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestRActionPerformed
