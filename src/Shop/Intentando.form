@@ -720,6 +720,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestZActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel105">
                           <Properties>
@@ -730,6 +733,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumZActionPerformed"/>
+                          </Events>
                         </Component>
                       </SubComponents>
                     </Container>
@@ -786,6 +792,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestCmActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel107">
                           <Properties>
@@ -796,6 +805,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumCmActionPerformed"/>
+                          </Events>
                         </Component>
                       </SubComponents>
                     </Container>

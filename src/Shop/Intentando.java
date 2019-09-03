@@ -551,10 +551,20 @@ public class Intentando extends javax.swing.JFrame {
         jLabel104.setMinimumSize(new java.awt.Dimension(120, 120));
 
         btnRestZ.setText("-");
+        btnRestZ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRestZActionPerformed(evt);
+            }
+        });
 
         jLabel105.setText("0");
 
         btnSumZ.setText("+");
+        btnSumZ.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumZActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
@@ -591,10 +601,20 @@ public class Intentando extends javax.swing.JFrame {
         jLabel106.setMinimumSize(new java.awt.Dimension(120, 120));
 
         btnRestCm.setText("-");
+        btnRestCm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRestCmActionPerformed(evt);
+            }
+        });
 
         jLabel107.setText("0");
 
         btnSumCm.setText("+");
+        btnSumCm.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumCmActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel44Layout = new javax.swing.GroupLayout(jPanel44);
         jPanel44.setLayout(jPanel44Layout);
@@ -1837,6 +1857,30 @@ public class Intentando extends javax.swing.JFrame {
         medias.restarProducto();
         jLabel103.setText(Integer.toString(medias.getCantidad()));
     }//GEN-LAST:event_btnSumMActionPerformed
+
+    private void btnSumCmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumCmActionPerformed
+        // TODO add your handling code here:
+        campera.sumarProducto();
+        jLabel107.setText(Integer.toString(campera.getCantidad()));
+    }//GEN-LAST:event_btnSumCmActionPerformed
+
+    private void btnRestCmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestCmActionPerformed
+        // TODO add your handling code here:
+        campera.restarProducto();
+        jLabel107.setText(Integer.toString(campera.getCantidad()));
+    }//GEN-LAST:event_btnRestCmActionPerformed
+
+    private void btnSumZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumZActionPerformed
+        // TODO add your handling code here:
+        zapatillas.sumarProducto();
+        jLabel105.setText(Integer.toString(zapatillas.getCantidad()));
+    }//GEN-LAST:event_btnSumZActionPerformed
+
+    private void btnRestZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestZActionPerformed
+        // TODO add your handling code here:
+        zapatillas.sumarProducto();
+        jLabel105.setText(Integer.toString(zapatillas.getCantidad()));
+    }//GEN-LAST:event_btnRestZActionPerformed
 
     /**
      * @param args the command line arguments
