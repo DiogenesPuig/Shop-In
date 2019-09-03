@@ -20,6 +20,7 @@ public class Intentando extends javax.swing.JFrame {
 
     public Usuario n1;
 
+    
     /* Creates new form Intentando*/
     public Intentando() {
         a();
@@ -1996,7 +1997,6 @@ public class Intentando extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void a() {
-        System.out.println("holo");
         initComponents();
         
         //Imagenes Ropa
@@ -2007,6 +2007,9 @@ public class Intentando extends javax.swing.JFrame {
         ImageIcon icon2;
         icon2 = new ImageIcon("Imagenes/Pantal.jpg");
         jLabel97.setIcon(icon2);
+
+       
+
         ImageIcon icon3;
         icon3 = new ImageIcon("Imagenes/medias.jpg");
         jLabel102.setIcon(icon3);
