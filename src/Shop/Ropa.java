@@ -40,11 +40,17 @@ public class Ropa extends Producto {
         int cantprob = super.cantidad;
         if (super.descuento) {
             if (super.cantidad % 2 == 0) {
+                super.precio = precioUnit * cantidad;
                 super.precio = super.precio / 2;
+                System.out.println(precio);
             }else{
-                super.precio = ((super.precio - super.precioUnit)/2)+super.precioUnit ;
+                super.precio = super.precioUnit * super.cantidad;               
+                super.precio = ((super.precio - super.precioUnit)/2);
+                super.precio+= super.precioUnit;
             }
             
+        }else{
+            precio = precioUnit * cantidad;
         }
     }
 
