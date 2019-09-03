@@ -308,6 +308,9 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="14" style="3"/>
             </Property>
+
+            <Property name="horizontalAlignment" type="int" value="0"/>
+
             <Property name="text" type="java.lang.String" value="Carrito"/>
           </Properties>
         </Component>
@@ -333,6 +336,14 @@
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel20">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="jLabel20"/>
+              </Properties>
+            </Component>
+          </SubComponents>
         </Container>
       </SubComponents>
     </Container>
@@ -475,6 +486,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestPActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel99">
                           <Properties>
@@ -485,6 +499,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumPActionPerformed"/>
+                          </Events>
                         </Component>
                       </SubComponents>
                     </Container>
@@ -497,7 +514,7 @@
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="btnRestR" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jLabel101" min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Component id="lblRemera" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnSumR" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -520,7 +537,9 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jLabel101" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+
+                                              <Component id="lblRemera" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+
                                               <Component id="btnSumR" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                               <Component id="btnRestR" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
@@ -556,7 +575,7 @@
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestRActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel101">
+                        <Component class="javax.swing.JLabel" name="lblRemera">
                           <Properties>
                             <Property name="text" type="java.lang.String" value="0"/>
                           </Properties>
@@ -565,6 +584,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumRActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.Box$Filler" name="filler4">
                           <Properties>
@@ -644,6 +666,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumMActionPerformed"/>
+                          </Events>
                         </Component>
                       </SubComponents>
                     </Container>
@@ -700,6 +725,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestZActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel105">
                           <Properties>
@@ -710,6 +738,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumZActionPerformed"/>
+                          </Events>
                         </Component>
                       </SubComponents>
                     </Container>
@@ -766,6 +797,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="-"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestCmActionPerformed"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel107">
                           <Properties>
@@ -776,6 +810,9 @@
                           <Properties>
                             <Property name="text" type="java.lang.String" value="+"/>
                           </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumCmActionPerformed"/>
+                          </Events>
                         </Component>
                       </SubComponents>
                     </Container>
@@ -810,6 +847,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jPanel65" min="-2" pref="170" max="-2" attributes="0"/>
                               <Component id="jPanel66" min="-2" pref="170" max="-2" attributes="0"/>
+
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -818,6 +856,7 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+
                               <Component id="jPanel67" min="-2" pref="170" max="-2" attributes="0"/>
                               <Component id="jPanel68" min="-2" pref="170" max="-2" attributes="0"/>
                           </Group>
@@ -1122,6 +1161,7 @@
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel141" min="-2" pref="115" max="-2" attributes="0"/>
+
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -1139,6 +1179,7 @@
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
+
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1730,6 +1771,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jPanel59" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
                           <Component id="jPanel71" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -1742,6 +1784,7 @@
                           <Component id="jPanel77" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
+
                       <Component id="jPanel75" min="-2" pref="170" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                       <Component id="filler18" min="-2" max="-2" attributes="0"/>
