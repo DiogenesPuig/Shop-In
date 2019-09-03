@@ -15,34 +15,38 @@ public class Intentando extends javax.swing.JFrame {
 
     public Usuario n1;
 
+    
     /* Creates new form Intentando*/
     public Intentando() {
         a();
     }
+
+                //especial,nombre,precioUnit,Precio,codigo,cantidad,descuento 
     Ropa remera = new Ropa("m","remera",500,500,"333344",0,false);
-    Ropa pantalon = new Ropa("m","pantalon",500,500,"334400",0,false);
-    Ropa medias = new Ropa("m","medias",500,500,"333145",0,true);
-    Ropa campera = new Ropa("m","campera",500,500,"334344",0,false);
-    Ropa zapatillas = new Ropa("39","zapatillas",500,500,"334414",0,false);
+    Ropa pantalon = new Ropa("m","pantalon",800,800,"334400",0,false);
+    Ropa medias = new Ropa("m","medias",100,100,"333145",0,true);
+    Ropa campera = new Ropa("m","campera",1600,1600,"334344",0,false);
+    Ropa zapatillas = new Ropa("39","zapatillas",900,900,"334414",0,false);
     // ---------------------------Alimentos-------------------------------------
-    Alimentos carne = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos pollo = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos pescado = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos cerdo = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos tomate = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos papa = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos lechuga = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos zanahoria = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos carne = new Alimentos("","carne",500,500,"77433",0,false);
+    Alimentos pollo = new Alimentos("","Pollo",490,490,"77000",0,false);
+    Alimentos pescado = new Alimentos("","Pescado",200,200,"773400",0,false);
+    Alimentos cerdo = new Alimentos("","Cerdo",350,350,"77300",0,false);
+    Alimentos tomate = new Alimentos("","Tomate",130,130,"770433",0,false);
+    Alimentos papa = new Alimentos("","Papa",80,80,"77444",0,false);
+    Alimentos lechuga = new Alimentos("","Lechuga",68,68,"77344",0,false);
+    Alimentos zanahoria = new Alimentos("","Zanahoria",83,83,"7744014",0,false);
     //---------------------------Limpieza---------------------------------------
-    Limpieza Papel_Higienico = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Trapo_De_Piso = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Detergente = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Lavandina = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Jabon = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Escoba = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Limpia_Vidrios = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Papel_Higienico = new Limpieza(10,"Papel Higienico",100,100,"554100",0,false);
+    Limpieza Trapo_De_Piso = new Limpieza(10,"Trapo De Piso",25,25,"554030",0,false);
+    Limpieza Detergente = new Limpieza(10,"Detergente",69,69,"553333",0,false);
+    Limpieza Lavandina = new Limpieza(10,"Lavandina",169,169,"554414",0,false);
+    Limpieza Jabon = new Limpieza(10,"Jabon",300,300,"55400",0,false);
+    Limpieza Escoba = new Limpieza(10,"Escoba",124,124,"553044",0,false);
+    Limpieza Limpia_Vidrios = new Limpieza(10,"Limpia Vidrios",1000,1000,"551141",0,false);
     
     
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -71,7 +75,9 @@ public class Intentando extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
+
         jLabel20 = new javax.swing.JLabel();
+
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -85,7 +91,9 @@ public class Intentando extends javax.swing.JFrame {
         jPanel41 = new javax.swing.JPanel();
         jLabel100 = new javax.swing.JLabel();
         btnRestR = new javax.swing.JButton();
+
         lblRemera = new javax.swing.JLabel();
+
         btnSumR = new javax.swing.JButton();
         filler4 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jPanel42 = new javax.swing.JPanel();
@@ -333,7 +341,9 @@ public class Intentando extends javax.swing.JFrame {
         jLabel3.setText("Total :");
 
         jLabel4.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
+
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         jLabel4.setText("Carrito");
 
         jLabel6.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
@@ -393,20 +403,24 @@ public class Intentando extends javax.swing.JFrame {
         jLabel97.setMinimumSize(new java.awt.Dimension(120, 120));
 
         btnRestP.setText("-");
+
         btnRestP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRestPActionPerformed(evt);
             }
         });
 
+
         jLabel99.setText("0");
 
         btnSumP.setText("+");
+
         btnSumP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumPActionPerformed(evt);
             }
         });
+
 
         javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
         jPanel40.setLayout(jPanel40Layout);
@@ -452,11 +466,13 @@ public class Intentando extends javax.swing.JFrame {
         lblRemera.setText("0");
 
         btnSumR.setText("+");
+
         btnSumR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumRActionPerformed(evt);
             }
         });
+
 
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
         jPanel41.setLayout(jPanel41Layout);
@@ -486,7 +502,9 @@ public class Intentando extends javax.swing.JFrame {
                     .addGroup(jPanel41Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+
                             .addComponent(lblRemera, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+
                             .addComponent(btnSumR, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnRestR))
                         .addContainerGap())
@@ -510,11 +528,13 @@ public class Intentando extends javax.swing.JFrame {
         jLabel103.setText("0");
 
         btnSumM.setText("+");
+
         btnSumM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumMActionPerformed(evt);
             }
         });
+
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
         jPanel42.setLayout(jPanel42Layout);
@@ -551,6 +571,7 @@ public class Intentando extends javax.swing.JFrame {
         jLabel104.setMinimumSize(new java.awt.Dimension(120, 120));
 
         btnRestZ.setText("-");
+
         btnRestZ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRestZActionPerformed(evt);
@@ -560,11 +581,13 @@ public class Intentando extends javax.swing.JFrame {
         jLabel105.setText("0");
 
         btnSumZ.setText("+");
+
         btnSumZ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumZActionPerformed(evt);
             }
         });
+
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
@@ -601,15 +624,18 @@ public class Intentando extends javax.swing.JFrame {
         jLabel106.setMinimumSize(new java.awt.Dimension(120, 120));
 
         btnRestCm.setText("-");
+
         btnRestCm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRestCmActionPerformed(evt);
             }
         });
 
+
         jLabel107.setText("0");
 
         btnSumCm.setText("+");
+
         btnSumCm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumCmActionPerformed(evt);
@@ -814,6 +840,7 @@ public class Intentando extends javax.swing.JFrame {
         jLabel141.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel141.setMinimumSize(new java.awt.Dimension(120, 120));
 
+
         btnRestPl.setText("+");
         btnRestPl.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -826,6 +853,7 @@ public class Intentando extends javax.swing.JFrame {
         btnSumPl.setText("+");
 
         jLabel10.setText("$490");
+
 
         javax.swing.GroupLayout jPanel65Layout = new javax.swing.GroupLayout(jPanel65);
         jPanel65.setLayout(jPanel65Layout);
@@ -1189,12 +1217,14 @@ public class Intentando extends javax.swing.JFrame {
                 .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel69, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel70, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+
                     .addComponent(jPanel67, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel68, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
@@ -1237,6 +1267,7 @@ public class Intentando extends javax.swing.JFrame {
         jLabel129.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel129.setMinimumSize(new java.awt.Dimension(120, 120));
 
+
         jButton122.setText("+");
         jButton122.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1249,6 +1280,7 @@ public class Intentando extends javax.swing.JFrame {
         jButton123.setText("+");
 
         jLabel16.setText("$100");
+
 
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
         jPanel59.setLayout(jPanel59Layout);
@@ -1359,6 +1391,7 @@ public class Intentando extends javax.swing.JFrame {
         jLabel155.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel155.setMinimumSize(new java.awt.Dimension(120, 120));
 
+
         jButton148.setText("+");
         jButton148.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1371,6 +1404,7 @@ public class Intentando extends javax.swing.JFrame {
         jButton149.setText("+");
 
         jLabel18.setText("$490");
+
 
         javax.swing.GroupLayout jPanel72Layout = new javax.swing.GroupLayout(jPanel72);
         jPanel72.setLayout(jPanel72Layout);
@@ -1542,6 +1576,7 @@ public class Intentando extends javax.swing.JFrame {
         jLabel163.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel163.setMinimumSize(new java.awt.Dimension(120, 120));
 
+
         jButton156.setText("+");
         jButton156.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1554,6 +1589,7 @@ public class Intentando extends javax.swing.JFrame {
         jButton157.setText("+");
 
         jLabel22.setText("$69");
+
 
         javax.swing.GroupLayout jPanel76Layout = new javax.swing.GroupLayout(jPanel76);
         jPanel76.setLayout(jPanel76Layout);
@@ -1783,6 +1819,7 @@ public class Intentando extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton148ActionPerformed
 
     private void jButton146ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton146ActionPerformed
+
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton146ActionPerformed
 
@@ -1881,6 +1918,7 @@ public class Intentando extends javax.swing.JFrame {
         zapatillas.sumarProducto();
         jLabel105.setText(Integer.toString(zapatillas.getCantidad()));
     }//GEN-LAST:event_btnRestZActionPerformed
+
 
     /**
      * @param args the command line arguments
@@ -2037,7 +2075,9 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+
     private javax.swing.JLabel jLabel20;
+
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -2087,7 +2127,6 @@ public class Intentando extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void a() {
-        System.out.println("holo");
         initComponents();
         
         //Imagenes Ropa
@@ -2098,6 +2137,7 @@ public class Intentando extends javax.swing.JFrame {
         ImageIcon icon2;
         icon2 = new ImageIcon("Imagenes/Pantal.jpg");
         jLabel97.setIcon(icon2);
+
         ImageIcon icon3;
         icon3 = new ImageIcon("Imagenes/medias.jpg");
         jLabel102.setIcon(icon3);

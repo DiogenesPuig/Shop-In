@@ -308,7 +308,9 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="14" style="3"/>
             </Property>
+
             <Property name="horizontalAlignment" type="int" value="0"/>
+
             <Property name="text" type="java.lang.String" value="Carrito"/>
           </Properties>
         </Component>
@@ -334,6 +336,7 @@
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+
           <SubComponents>
             <Component class="javax.swing.JLabel" name="jLabel20">
               <Properties>
@@ -534,7 +537,9 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
+
                                               <Component id="lblRemera" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+
                                               <Component id="btnSumR" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                               <Component id="btnRestR" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
@@ -842,6 +847,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jPanel65" min="-2" pref="170" max="-2" attributes="0"/>
                               <Component id="jPanel66" min="-2" pref="170" max="-2" attributes="0"/>
+
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -850,6 +856,7 @@
                           </Group>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+
                               <Component id="jPanel67" min="-2" pref="170" max="-2" attributes="0"/>
                               <Component id="jPanel68" min="-2" pref="170" max="-2" attributes="0"/>
                           </Group>
@@ -1154,6 +1161,7 @@
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jLabel141" min="-2" pref="115" max="-2" attributes="0"/>
+
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
@@ -1171,6 +1179,7 @@
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
+
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1762,6 +1771,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jPanel59" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
                           <Component id="jPanel71" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -1774,6 +1784,7 @@
                           <Component id="jPanel77" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
+
                       <Component id="jPanel75" min="-2" pref="170" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                       <Component id="filler18" min="-2" max="-2" attributes="0"/>
