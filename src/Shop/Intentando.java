@@ -24,28 +24,29 @@ public class Intentando extends javax.swing.JFrame {
     public Intentando() {
         a();
     }
+                //especial,nombre,precioUnit,Precio,codigo,cantidad,descuento 
     Ropa remera = new Ropa("m","remera",500,500,"333344",0,false);
-    Ropa pantalon = new Ropa("m","pantalon",500,500,"334400",0,false);
-    Ropa medias = new Ropa("m","medias",500,500,"333145",0,true);
-    Ropa campera = new Ropa("m","campera",500,500,"334344",0,false);
-    Ropa zapatillas = new Ropa("39","zapatillas",500,500,"334414",0,false);
+    Ropa pantalon = new Ropa("m","pantalon",800,800,"334400",0,false);
+    Ropa medias = new Ropa("m","medias",100,100,"333145",0,true);
+    Ropa campera = new Ropa("m","campera",1600,1600,"334344",0,false);
+    Ropa zapatillas = new Ropa("39","zapatillas",900,900,"334414",0,false);
     // ---------------------------Alimentos-------------------------------------
-    Alimentos carne = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos pollo = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos pescado = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos cerdo = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos tomate = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos papa = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos lechuga = new Alimentos("","carne",100,1,"",0,false);
-    Alimentos zanahoria = new Alimentos("","carne",100,1,"",0,false);
+    Alimentos carne = new Alimentos("","carne",500,500,"77433",0,false);
+    Alimentos pollo = new Alimentos("","Pollo",490,490,"77000",0,false);
+    Alimentos pescado = new Alimentos("","Pescado",200,200,"773400",0,false);
+    Alimentos cerdo = new Alimentos("","Cerdo",350,350,"77300",0,false);
+    Alimentos tomate = new Alimentos("","Tomate",130,130,"770433",0,false);
+    Alimentos papa = new Alimentos("","Papa",80,80,"77444",0,false);
+    Alimentos lechuga = new Alimentos("","Lechuga",68,68,"77344",0,false);
+    Alimentos zanahoria = new Alimentos("","Zanahoria",83,83,"7744014",0,false);
     //---------------------------Limpieza---------------------------------------
-    Limpieza Papel_Higienico = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Trapo_De_Piso = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Detergente = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Lavandina = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Jabon = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Escoba = new Limpieza(10,"",1,1,"",0,false);
-    Limpieza Limpia_Vidrios = new Limpieza(10,"",1,1,"",0,false);
+    Limpieza Papel_Higienico = new Limpieza(10,"Papel Higienico",100,100,"554100",0,false);
+    Limpieza Trapo_De_Piso = new Limpieza(10,"Trapo De Piso",25,25,"554030",0,false);
+    Limpieza Detergente = new Limpieza(10,"Detergente",69,69,"553333",0,false);
+    Limpieza Lavandina = new Limpieza(10,"Lavandina",169,169,"554414",0,false);
+    Limpieza Jabon = new Limpieza(10,"Jabon",300,300,"55400",0,false);
+    Limpieza Escoba = new Limpieza(10,"Escoba",124,124,"553044",0,false);
+    Limpieza Limpia_Vidrios = new Limpieza(10,"Limpia Vidrios",1000,1000,"551141",0,false);
     
     
 
