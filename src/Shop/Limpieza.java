@@ -49,6 +49,8 @@ public class Limpieza extends Producto {
             }
             super.precio = (super.cantidad * super.precioUnit) + super.precioUnit * i;
             //hacer q cada 3 objetos page x 2
+        }else{
+            precio = precioUnit * cantidad;
         }
         //To change body of generated methods, choose Tools | Templates.
     }
@@ -61,6 +63,12 @@ public class Limpieza extends Producto {
     @Override
     public void sumarProducto() {
         super.sumarProducto(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void calcularTotal() {
+        validarDescuento();
+        aplicarDescuento();
     }
 
     @Override

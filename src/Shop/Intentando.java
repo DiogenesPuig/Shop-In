@@ -74,10 +74,8 @@ public class Intentando extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-
-        jLabel20 = new javax.swing.JLabel();
-
+        jScrollPane4 = new javax.swing.JScrollPane();
+        txtCarrito = new javax.swing.JTextArea();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -91,9 +89,7 @@ public class Intentando extends javax.swing.JFrame {
         jPanel41 = new javax.swing.JPanel();
         jLabel100 = new javax.swing.JLabel();
         btnRestR = new javax.swing.JButton();
-
         lblRemera = new javax.swing.JLabel();
-
         btnSumR = new javax.swing.JButton();
         filler4 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jPanel42 = new javax.swing.JPanel();
@@ -341,9 +337,7 @@ public class Intentando extends javax.swing.JFrame {
         jLabel3.setText("Total :");
 
         jLabel4.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
-
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
         jLabel4.setText("Carrito");
 
         jLabel6.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
@@ -353,8 +347,10 @@ public class Intentando extends javax.swing.JFrame {
 
         jLabel7.setText("0");
 
-        jLabel20.setText("jLabel20");
-        jScrollPane1.setViewportView(jLabel20);
+        txtCarrito.setEditable(false);
+        txtCarrito.setColumns(20);
+        txtCarrito.setRows(5);
+        jScrollPane4.setViewportView(txtCarrito);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -370,21 +366,22 @@ public class Intentando extends javax.swing.JFrame {
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(100, 100, 100))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(65, 65, 65)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 267, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -403,24 +400,20 @@ public class Intentando extends javax.swing.JFrame {
         jLabel97.setMinimumSize(new java.awt.Dimension(120, 120));
 
         btnRestP.setText("-");
-
         btnRestP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRestPActionPerformed(evt);
             }
         });
 
-
         jLabel99.setText("0");
 
         btnSumP.setText("+");
-
         btnSumP.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumPActionPerformed(evt);
             }
         });
-
 
         javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
         jPanel40.setLayout(jPanel40Layout);
@@ -466,13 +459,11 @@ public class Intentando extends javax.swing.JFrame {
         lblRemera.setText("0");
 
         btnSumR.setText("+");
-
         btnSumR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumRActionPerformed(evt);
             }
         });
-
 
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
         jPanel41.setLayout(jPanel41Layout);
@@ -502,9 +493,7 @@ public class Intentando extends javax.swing.JFrame {
                     .addGroup(jPanel41Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-
                             .addComponent(lblRemera, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-
                             .addComponent(btnSumR, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnRestR))
                         .addContainerGap())
@@ -528,13 +517,11 @@ public class Intentando extends javax.swing.JFrame {
         jLabel103.setText("0");
 
         btnSumM.setText("+");
-
         btnSumM.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumMActionPerformed(evt);
             }
         });
-
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
         jPanel42.setLayout(jPanel42Layout);
@@ -571,7 +558,6 @@ public class Intentando extends javax.swing.JFrame {
         jLabel104.setMinimumSize(new java.awt.Dimension(120, 120));
 
         btnRestZ.setText("-");
-
         btnRestZ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRestZActionPerformed(evt);
@@ -581,13 +567,11 @@ public class Intentando extends javax.swing.JFrame {
         jLabel105.setText("0");
 
         btnSumZ.setText("+");
-
         btnSumZ.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumZActionPerformed(evt);
             }
         });
-
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
         jPanel43.setLayout(jPanel43Layout);
@@ -624,18 +608,15 @@ public class Intentando extends javax.swing.JFrame {
         jLabel106.setMinimumSize(new java.awt.Dimension(120, 120));
 
         btnRestCm.setText("-");
-
         btnRestCm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRestCmActionPerformed(evt);
             }
         });
 
-
         jLabel107.setText("0");
 
         btnSumCm.setText("+");
-
         btnSumCm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumCmActionPerformed(evt);
@@ -840,7 +821,6 @@ public class Intentando extends javax.swing.JFrame {
         jLabel141.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel141.setMinimumSize(new java.awt.Dimension(120, 120));
 
-
         btnRestPl.setText("+");
         btnRestPl.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -853,7 +833,6 @@ public class Intentando extends javax.swing.JFrame {
         btnSumPl.setText("+");
 
         jLabel10.setText("$490");
-
 
         javax.swing.GroupLayout jPanel65Layout = new javax.swing.GroupLayout(jPanel65);
         jPanel65.setLayout(jPanel65Layout);
@@ -1217,14 +1196,12 @@ public class Intentando extends javax.swing.JFrame {
                 .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel69, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel70, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-
                     .addComponent(jPanel67, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel68, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
@@ -1267,7 +1244,6 @@ public class Intentando extends javax.swing.JFrame {
         jLabel129.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel129.setMinimumSize(new java.awt.Dimension(120, 120));
 
-
         jButton122.setText("+");
         jButton122.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1280,7 +1256,6 @@ public class Intentando extends javax.swing.JFrame {
         jButton123.setText("+");
 
         jLabel16.setText("$100");
-
 
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
         jPanel59.setLayout(jPanel59Layout);
@@ -1391,7 +1366,6 @@ public class Intentando extends javax.swing.JFrame {
         jLabel155.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel155.setMinimumSize(new java.awt.Dimension(120, 120));
 
-
         jButton148.setText("+");
         jButton148.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1404,7 +1378,6 @@ public class Intentando extends javax.swing.JFrame {
         jButton149.setText("+");
 
         jLabel18.setText("$490");
-
 
         javax.swing.GroupLayout jPanel72Layout = new javax.swing.GroupLayout(jPanel72);
         jPanel72.setLayout(jPanel72Layout);
@@ -1576,7 +1549,6 @@ public class Intentando extends javax.swing.JFrame {
         jLabel163.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel163.setMinimumSize(new java.awt.Dimension(120, 120));
 
-
         jButton156.setText("+");
         jButton156.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1589,7 +1561,6 @@ public class Intentando extends javax.swing.JFrame {
         jButton157.setText("+");
 
         jLabel22.setText("$69");
-
 
         javax.swing.GroupLayout jPanel76Layout = new javax.swing.GroupLayout(jPanel76);
         jPanel76.setLayout(jPanel76Layout);
@@ -1910,7 +1881,9 @@ public class Intentando extends javax.swing.JFrame {
     private void btnSumZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumZActionPerformed
         // TODO add your handling code here:
         zapatillas.sumarProducto();
+        zapatillas.calcularTotal();
         jLabel105.setText(Integer.toString(zapatillas.getCantidad()));
+        txtCarrito.setText(zapatillas.getNombre() + " " + zapatillas.getPrecio() + "\n" );
     }//GEN-LAST:event_btnSumZActionPerformed
 
     private void btnRestZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestZActionPerformed
@@ -2075,9 +2048,6 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-
-    private javax.swing.JLabel jLabel20;
-
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -2116,14 +2086,15 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel75;
     private javax.swing.JPanel jPanel76;
     private javax.swing.JPanel jPanel77;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblRemera;
     public javax.swing.JLabel lbl_estUs;
+    private javax.swing.JTextArea txtCarrito;
     // End of variables declaration//GEN-END:variables
 
     private void a() {
