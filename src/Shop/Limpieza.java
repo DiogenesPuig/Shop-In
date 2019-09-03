@@ -49,7 +49,7 @@ public class Limpieza extends Producto {
             }
             super.precio = (super.cantidad * super.precioUnit) + super.precioUnit * i;
             //hacer q cada 3 objetos page x 2
-        }else{
+        } else {
             precio = precioUnit * cantidad;
         }
         //To change body of generated methods, choose Tools | Templates.
