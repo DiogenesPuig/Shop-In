@@ -23,18 +23,21 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="btnRegister" max="32767" attributes="0"/>
-                  <Component id="btn_Iniciar" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="btn_Iniciar" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnRegister" min="-2" pref="167" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="102" max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="jLabel1" min="-2" pref="125" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="94" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -45,9 +48,9 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btn_Iniciar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Component id="btnRegister" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="66" max="32767" attributes="0"/>
+              <EmptySpace pref="59" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -55,6 +58,9 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="btn_Iniciar">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="18" style="3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Iniciar Sesion"/>
       </Properties>
       <Events>
@@ -63,6 +69,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnRegister">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="18" style="3"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Registrate :D"/>
       </Properties>
       <Events>
@@ -71,6 +80,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="24" style="2"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Bienvenido"/>
       </Properties>
     </Component>

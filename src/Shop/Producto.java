@@ -94,7 +94,13 @@ public class Producto {
     }
 
     public void restarProducto() {
-        cantidad -= 1;
+        if (cantidad == 0 ){
+            cantidad = cantidad;
+        }else{
+            cantidad -= 1;
+        }
+        
+        
     }
 
     public void validarDescuento() {
@@ -110,7 +116,13 @@ public class Producto {
     }
     
     public void calcularTotal(){
-        precio = precio*cantidad;
+        if (descuento){
+            aplicarDescuento();
+        }else{
+            precio = precio*cantidad;
+        }
+        
+        
     }
 
     @Override
