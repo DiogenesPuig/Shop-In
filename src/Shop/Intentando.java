@@ -75,7 +75,7 @@ public class Intentando extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jLabel20 = new javax.swing.JLabel();
+        txtCarrito = new javax.swing.JTextArea();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -347,8 +347,9 @@ public class Intentando extends javax.swing.JFrame {
 
         jLabel7.setText("0");
 
-        jLabel20.setText("jLabel20");
-        jScrollPane1.setViewportView(jLabel20);
+        txtCarrito.setColumns(20);
+        txtCarrito.setRows(5);
+        jScrollPane1.setViewportView(txtCarrito);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1878,7 +1879,9 @@ public class Intentando extends javax.swing.JFrame {
     private void btnSumZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumZActionPerformed
         // TODO add your handling code here:
         zapatillas.sumarProducto();
+        zapatillas.calcularTotal();
         jLabel105.setText(Integer.toString(zapatillas.getCantidad()));
+        txtCarrito.setText(zapatillas.getNombre() + " " + zapatillas.getPrecio() + "\n" );
     }//GEN-LAST:event_btnSumZActionPerformed
 
     private void btnRestZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestZActionPerformed
@@ -2043,7 +2046,6 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -2090,6 +2092,7 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblRemera;
     public javax.swing.JLabel lbl_estUs;
+    private javax.swing.JTextArea txtCarrito;
     // End of variables declaration//GEN-END:variables
 
     private void a() {

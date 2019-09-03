@@ -39,6 +39,7 @@ public class Ropa extends Producto {
     public void aplicarDescuento() {
         int cantprob = super.cantidad;
         if (super.descuento) {
+            System.out.println("hola");
             if (super.cantidad % 2 == 0) {
                 super.precio = precioUnit * cantidad;
                 super.precio = super.precio / 2;
