@@ -21,6 +21,8 @@ public class Intentando extends javax.swing.JFrame {
         a();
     }
 
+    Carrito carro = new Carrito();
+    
                 //especial,nombre,precioUnit,Precio,codigo,cantidad,descuento 
     Ropa remera = new Ropa("m","remera",500,500,"333344",0,false);
     Ropa pantalon = new Ropa("m","pantalon",800,800,"334400",0,false);
@@ -74,6 +76,8 @@ public class Intentando extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtCarro = new javax.swing.JTextArea();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jScrollPane5 = new javax.swing.JScrollPane();
         jPanel55 = new javax.swing.JPanel();
@@ -185,6 +189,7 @@ public class Intentando extends javax.swing.JFrame {
         jButton159 = new javax.swing.JButton();
         filler26 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel23 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
         jScrollPane2 = new javax.swing.JScrollPane();
         jScrollPane3 = new javax.swing.JScrollPane();
         jPanel39 = new javax.swing.JPanel();
@@ -345,6 +350,10 @@ public class Intentando extends javax.swing.JFrame {
 
         jLabel7.setText("0");
 
+        txtCarro.setColumns(20);
+        txtCarro.setRows(5);
+        jScrollPane1.setViewportView(txtCarro);
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -362,13 +371,18 @@ public class Intentando extends javax.swing.JFrame {
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(65, 65, 65)
                         .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 401, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -395,6 +409,11 @@ public class Intentando extends javax.swing.JFrame {
         jLabel126.setText("0");
 
         btnSumC.setText("+");
+        btnSumC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumCActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("$500");
 
@@ -920,7 +939,7 @@ public class Intentando extends javax.swing.JFrame {
                             .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 259, Short.MAX_VALUE))
+                .addGap(0, 265, Short.MAX_VALUE))
         );
 
         jScrollPane5.setViewportView(jPanel55);
@@ -1372,9 +1391,12 @@ public class Intentando extends javax.swing.JFrame {
                     .addComponent(jPanel76, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel77, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel75, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addComponent(filler18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel56Layout.createSequentialGroup()
+                        .addComponent(jPanel75, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(filler18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel56Layout.setVerticalGroup(
@@ -1384,14 +1406,17 @@ public class Intentando extends javax.swing.JFrame {
                 .addComponent(filler18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel56Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(jPanel56Layout.createSequentialGroup()
                             .addComponent(jPanel76, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jPanel77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jPanel75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel56Layout.createSequentialGroup()
+                            .addComponent(jPanel75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel56Layout.createSequentialGroup()
                             .addComponent(jPanel59, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1699,7 +1724,7 @@ public class Intentando extends javax.swing.JFrame {
                     .addComponent(jPanel41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jScrollPane3.setViewportView(jPanel39);
@@ -1730,7 +1755,7 @@ public class Intentando extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 494, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -1756,35 +1781,6 @@ public class Intentando extends javax.swing.JFrame {
     private void jButton120ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton120ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton120ActionPerformed
-
-    private void jButton158ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton158ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton158ActionPerformed
-
-    private void jButton156ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton156ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton156ActionPerformed
-
-    private void jButton154ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton154ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton154ActionPerformed
-
-    private void jButton150ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton150ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton150ActionPerformed
-
-    private void jButton148ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton148ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton148ActionPerformed
-
-    private void jButton146ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton146ActionPerformed
-
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton146ActionPerformed
-
-    private void jButton122ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton122ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton122ActionPerformed
 
     private void jButton144ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton144ActionPerformed
         // TODO add your handling code here:
@@ -1879,6 +1875,45 @@ public class Intentando extends javax.swing.JFrame {
         remera.restarProducto();
         lblRemera.setText(Integer.toString(remera.getCantidad()));
     }//GEN-LAST:event_btnRestRActionPerformed
+
+    private void btnSumCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumCActionPerformed
+        // TODO add your handling code here:
+        // agregar nombre , agregar precio y hacer el txt
+        carro.agregarNombres(carne.getNombre());
+        carro.agregarPrecio(carne.getPrecio());
+        txtCarro.setText(carro.hacerTxt());
+        
+        
+    }//GEN-LAST:event_btnSumCActionPerformed
+
+    private void jButton158ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton158ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton158ActionPerformed
+
+    private void jButton156ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton156ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton156ActionPerformed
+
+    private void jButton154ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton154ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton154ActionPerformed
+
+    private void jButton150ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton150ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton150ActionPerformed
+
+    private void jButton148ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton148ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton148ActionPerformed
+
+    private void jButton146ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton146ActionPerformed
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton146ActionPerformed
+
+    private void jButton122ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton122ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton122ActionPerformed
 
 
     /**
@@ -2074,13 +2109,16 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel75;
     private javax.swing.JPanel jPanel76;
     private javax.swing.JPanel jPanel77;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblRemera;
     public javax.swing.JLabel lbl_estUs;
+    private javax.swing.JTextArea txtCarro;
     // End of variables declaration//GEN-END:variables
 
     private void a() {
