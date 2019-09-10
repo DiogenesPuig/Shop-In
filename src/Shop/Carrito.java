@@ -149,7 +149,11 @@ public class Carrito {
     }
 
     public void calcularTotal() {
+        total = 0;
         for (int i = 0; i < (precios.length); i++) {
+            if(nombre[i] == null){
+                break;
+            }
             total = total + precios[i];
         }
     }

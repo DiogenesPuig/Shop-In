@@ -69,7 +69,7 @@ public class Intentando extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        lbtotal = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -147,9 +147,9 @@ public class Intentando extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jPanel71 = new javax.swing.JPanel();
         jLabel153 = new javax.swing.JLabel();
-        jButton146 = new javax.swing.JButton();
+        bntResJb = new javax.swing.JButton();
         jLabel154 = new javax.swing.JLabel();
-        jButton147 = new javax.swing.JButton();
+        btnSumJb = new javax.swing.JButton();
         filler20 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel17 = new javax.swing.JLabel();
         jPanel72 = new javax.swing.JPanel();
@@ -161,30 +161,30 @@ public class Intentando extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jPanel73 = new javax.swing.JPanel();
         jLabel157 = new javax.swing.JLabel();
-        jButton150 = new javax.swing.JButton();
+        btnResEs = new javax.swing.JButton();
         jLabel158 = new javax.swing.JLabel();
-        jButton151 = new javax.swing.JButton();
+        btnSumEs = new javax.swing.JButton();
         filler22 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel19 = new javax.swing.JLabel();
         jPanel75 = new javax.swing.JPanel();
         jLabel161 = new javax.swing.JLabel();
-        jButton154 = new javax.swing.JButton();
+        btnResLv = new javax.swing.JButton();
         jLabel162 = new javax.swing.JLabel();
-        jButton155 = new javax.swing.JButton();
+        btnSumLv = new javax.swing.JButton();
         filler24 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel21 = new javax.swing.JLabel();
         jPanel76 = new javax.swing.JPanel();
         jLabel163 = new javax.swing.JLabel();
-        jButton156 = new javax.swing.JButton();
+        btnResDtr = new javax.swing.JButton();
         jLabel164 = new javax.swing.JLabel();
-        jButton157 = new javax.swing.JButton();
+        btnSumDtr = new javax.swing.JButton();
         filler25 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel22 = new javax.swing.JLabel();
         jPanel77 = new javax.swing.JPanel();
         jLabel165 = new javax.swing.JLabel();
-        jButton158 = new javax.swing.JButton();
+        btnResLvs = new javax.swing.JButton();
         jLabel166 = new javax.swing.JLabel();
-        jButton159 = new javax.swing.JButton();
+        btnSumLvs = new javax.swing.JButton();
         filler26 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel23 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -332,7 +332,7 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
-        jLabel2.setText("0");
+        lbtotal.setText("0");
 
         jLabel3.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
         jLabel3.setText("Total :");
@@ -364,7 +364,7 @@ public class Intentando extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(100, 100, 100))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -387,7 +387,7 @@ public class Intentando extends javax.swing.JFrame {
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
+                    .addComponent(lbtotal)
                     .addComponent(jLabel3))
                 .addContainerGap())
         );
@@ -993,6 +993,11 @@ public class Intentando extends javax.swing.JFrame {
         jLabel130.setText("0");
 
         btnSumPh.setText("+");
+        btnSumPh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumPhActionPerformed(evt);
+            }
+        });
 
         jLabel16.setText("$100");
 
@@ -1044,16 +1049,21 @@ public class Intentando extends javax.swing.JFrame {
         jLabel153.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel153.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton146.setText("-");
-        jButton146.addActionListener(new java.awt.event.ActionListener() {
+        bntResJb.setText("-");
+        bntResJb.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton146ActionPerformed(evt);
+                bntResJbActionPerformed(evt);
             }
         });
 
         jLabel154.setText("0");
 
-        jButton147.setText("+");
+        btnSumJb.setText("+");
+        btnSumJb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumJbActionPerformed(evt);
+            }
+        });
 
         jLabel17.setText("$130");
 
@@ -1065,11 +1075,11 @@ public class Intentando extends javax.swing.JFrame {
                 .addGroup(jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel71Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton146, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(bntResJb, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel154, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton147, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSumJb, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29))
                     .addGroup(jPanel71Layout.createSequentialGroup()
                         .addGap(56, 56, 56)
@@ -1097,8 +1107,8 @@ public class Intentando extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel71Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel154, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton147, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton146))))
+                            .addComponent(btnSumJb, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bntResJb))))
                 .addContainerGap())
         );
 
@@ -1115,6 +1125,11 @@ public class Intentando extends javax.swing.JFrame {
         jLabel156.setText("0");
 
         btnSumTp.setText("+");
+        btnSumTp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumTpActionPerformed(evt);
+            }
+        });
 
         jLabel18.setText("$490");
 
@@ -1166,16 +1181,21 @@ public class Intentando extends javax.swing.JFrame {
         jLabel157.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel157.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton150.setText("-");
-        jButton150.addActionListener(new java.awt.event.ActionListener() {
+        btnResEs.setText("-");
+        btnResEs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton150ActionPerformed(evt);
+                btnResEsActionPerformed(evt);
             }
         });
 
         jLabel158.setText("0");
 
-        jButton151.setText("+");
+        btnSumEs.setText("+");
+        btnSumEs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumEsActionPerformed(evt);
+            }
+        });
 
         jLabel19.setText("$125");
 
@@ -1187,11 +1207,11 @@ public class Intentando extends javax.swing.JFrame {
                 .addGroup(jPanel73Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel73Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton150, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnResEs, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel158, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton151, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSumEs, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29))
                     .addGroup(jPanel73Layout.createSequentialGroup()
                         .addGap(56, 56, 56)
@@ -1219,24 +1239,29 @@ public class Intentando extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel73Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel158, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton151, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton150))))
+                            .addComponent(btnSumEs, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnResEs))))
                 .addContainerGap())
         );
 
         jLabel161.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel161.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton154.setText("-");
-        jButton154.addActionListener(new java.awt.event.ActionListener() {
+        btnResLv.setText("-");
+        btnResLv.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton154ActionPerformed(evt);
+                btnResLvActionPerformed(evt);
             }
         });
 
         jLabel162.setText("0");
 
-        jButton155.setText("+");
+        btnSumLv.setText("+");
+        btnSumLv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumLvActionPerformed(evt);
+            }
+        });
 
         jLabel21.setText("$169");
 
@@ -1248,11 +1273,11 @@ public class Intentando extends javax.swing.JFrame {
                 .addGroup(jPanel75Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel75Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton154, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnResLv, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel162, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton155, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSumLv, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29))
                     .addGroup(jPanel75Layout.createSequentialGroup()
                         .addGap(56, 56, 56)
@@ -1280,24 +1305,29 @@ public class Intentando extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel75Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel162, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton155, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton154))))
+                            .addComponent(btnSumLv, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnResLv))))
                 .addContainerGap())
         );
 
         jLabel163.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel163.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton156.setText("-");
-        jButton156.addActionListener(new java.awt.event.ActionListener() {
+        btnResDtr.setText("-");
+        btnResDtr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton156ActionPerformed(evt);
+                btnResDtrActionPerformed(evt);
             }
         });
 
         jLabel164.setText("0");
 
-        jButton157.setText("+");
+        btnSumDtr.setText("+");
+        btnSumDtr.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumDtrActionPerformed(evt);
+            }
+        });
 
         jLabel22.setText("$69");
 
@@ -1309,11 +1339,11 @@ public class Intentando extends javax.swing.JFrame {
                 .addGroup(jPanel76Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel76Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton156, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnResDtr, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel164, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton157, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSumDtr, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29))
                     .addGroup(jPanel76Layout.createSequentialGroup()
                         .addGap(56, 56, 56)
@@ -1341,24 +1371,29 @@ public class Intentando extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel76Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel164, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton157, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton156))))
+                            .addComponent(btnSumDtr, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnResDtr))))
                 .addContainerGap())
         );
 
         jLabel165.setMaximumSize(new java.awt.Dimension(120, 120));
         jLabel165.setMinimumSize(new java.awt.Dimension(120, 120));
 
-        jButton158.setText("-");
-        jButton158.addActionListener(new java.awt.event.ActionListener() {
+        btnResLvs.setText("-");
+        btnResLvs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton158ActionPerformed(evt);
+                btnResLvsActionPerformed(evt);
             }
         });
 
         jLabel166.setText("0");
 
-        jButton159.setText("+");
+        btnSumLvs.setText("+");
+        btnSumLvs.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSumLvsActionPerformed(evt);
+            }
+        });
 
         jLabel23.setText("$100");
 
@@ -1370,11 +1405,11 @@ public class Intentando extends javax.swing.JFrame {
                 .addGroup(jPanel77Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel77Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton158, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnResLvs, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel166, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton159, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSumLvs, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29))
                     .addGroup(jPanel77Layout.createSequentialGroup()
                         .addGap(56, 56, 56)
@@ -1402,8 +1437,8 @@ public class Intentando extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel77Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel166, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton159, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton158))))
+                            .addComponent(btnSumLvs, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnResLvs))))
                 .addContainerGap())
         );
 
@@ -1812,6 +1847,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(cerdo.getNombre());
         carro.agregarPrecio(cerdo.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton120ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton120ActionPerformed
@@ -1821,6 +1858,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(cerdo.getNombre());
         carro.agregarPrecio(cerdo.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_jButton120ActionPerformed
 
     private void btnResLcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResLcActionPerformed
@@ -1830,6 +1869,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(lechuga.getNombre());
         carro.agregarPrecio(lechuga.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnResLcActionPerformed
 
     private void btnResPsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResPsActionPerformed
@@ -1839,6 +1880,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(pescado.getNombre());
         carro.agregarPrecio(pescado.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnResPsActionPerformed
 
     private void btnRescerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRescerActionPerformed
@@ -1848,6 +1891,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(cerdo.getNombre());
         carro.agregarPrecio(cerdo.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnRescerActionPerformed
 
     private void btnResZhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResZhActionPerformed
@@ -1857,6 +1902,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(zanahoria.getNombre());
         carro.agregarPrecio(zanahoria.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnResZhActionPerformed
 
     private void btnResPpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResPpActionPerformed
@@ -1866,6 +1913,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(papa.getNombre());
         carro.agregarPrecio(papa.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnResPpActionPerformed
 
     private void btnRestPlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestPlActionPerformed
@@ -1875,6 +1924,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(pollo.getNombre());
         carro.agregarPrecio(pollo.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnRestPlActionPerformed
 
     private void btnResToActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResToActionPerformed
@@ -1884,6 +1935,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(tomate.getNombre());
         carro.agregarPrecio(tomate.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnResToActionPerformed
 
     private void btnRestCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestCActionPerformed
@@ -1893,96 +1946,118 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(carne.getNombre());
         carro.agregarPrecio(carne.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnRestCActionPerformed
 
     private void btnSumCmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumCmActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        campera.sumarProducto();
+        campera.calcularTotal();
+        carro.agregarNombres(campera.getNombre());
+        carro.agregarPrecio(campera.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumCmActionPerformed
 
     private void btnRestCmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestCmActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        campera.restarProducto();
+        campera.calcularTotal();
+        carro.agregarNombres(campera.getNombre());
+        carro.agregarPrecio(campera.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnRestCmActionPerformed
 
     private void btnSumZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumZActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        zapatillas.sumarProducto();
+        zapatillas.calcularTotal();
+        carro.agregarNombres(zapatillas.getNombre());
+        carro.agregarPrecio(zapatillas.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumZActionPerformed
 
     private void btnRestZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestZActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        zapatillas.restarProducto();
+        zapatillas.calcularTotal();
+        carro.agregarNombres(zapatillas.getNombre());
+        carro.agregarPrecio(zapatillas.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnRestZActionPerformed
 
     private void btnSumMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumMActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        medias.sumarProducto();
+        medias.calcularTotal();
+        carro.agregarNombres(medias.getNombre());
+        carro.agregarPrecio(medias.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumMActionPerformed
 
     private void btnRestMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestMActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        medias.restarProducto();
+        medias.calcularTotal();
+        carro.agregarNombres(medias.getNombre());
+        carro.agregarPrecio(medias.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnRestMActionPerformed
 
     private void btnSumPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumPActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        pantalon.sumarProducto();
+        pantalon.calcularTotal();
+        carro.agregarNombres(pantalon.getNombre());
+        carro.agregarPrecio(pantalon.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumPActionPerformed
 
     private void btnRestPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestPActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        pantalon.restarProducto();
+        pantalon.calcularTotal();
+        carro.agregarNombres(pantalon.getNombre());
+        carro.agregarPrecio(pantalon.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnRestPActionPerformed
 
     private void btnSumRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumRActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        remera.sumarProducto();
+        remera.calcularTotal();
+        carro.agregarNombres(remera.getNombre());
+        carro.agregarPrecio(remera.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumRActionPerformed
 
     private void btnRestRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestRActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        remera.restarProducto();
+        remera.calcularTotal();
+        carro.agregarNombres(remera.getNombre());
+        carro.agregarPrecio(remera.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnRestRActionPerformed
 
     private void btnSumCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumCActionPerformed
@@ -1993,69 +2068,85 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(carne.getNombre());
         carro.agregarPrecio(carne.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumCActionPerformed
 
-    private void jButton158ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton158ActionPerformed
+    private void btnResLvsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResLvsActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        Limpia_Vidrios.restarProducto();
+        Limpia_Vidrios.calcularTotal();
+        carro.agregarNombres(Limpia_Vidrios.getNombre());
+        carro.agregarPrecio(Limpia_Vidrios.getPrecio());
         txtCarro.setText(carro.hacerTxt());
-    }//GEN-LAST:event_jButton158ActionPerformed
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnResLvsActionPerformed
 
-    private void jButton156ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton156ActionPerformed
+    private void btnResDtrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResDtrActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        Detergente.restarProducto();
+        Detergente.calcularTotal();
+        carro.agregarNombres(Detergente.getNombre());
+        carro.agregarPrecio(Detergente.getPrecio());
         txtCarro.setText(carro.hacerTxt());
-    }//GEN-LAST:event_jButton156ActionPerformed
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnResDtrActionPerformed
 
-    private void jButton154ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton154ActionPerformed
+    private void btnResLvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResLvActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        Lavandina.restarProducto();
+        Lavandina.calcularTotal();
+        carro.agregarNombres(Lavandina.getNombre());
+        carro.agregarPrecio(Lavandina.getPrecio());
         txtCarro.setText(carro.hacerTxt());
-    }//GEN-LAST:event_jButton154ActionPerformed
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnResLvActionPerformed
 
-    private void jButton150ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton150ActionPerformed
+    private void btnResEsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResEsActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        Escoba.restarProducto();
+        Escoba.calcularTotal();
+        carro.agregarNombres(Escoba.getNombre());
+        carro.agregarPrecio(Escoba.getPrecio());
         txtCarro.setText(carro.hacerTxt());
-    }//GEN-LAST:event_jButton150ActionPerformed
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnResEsActionPerformed
 
     private void btnResTpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResTpActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        Trapo_De_Piso.restarProducto();
+        Trapo_De_Piso.calcularTotal();
+        carro.agregarNombres(Trapo_De_Piso.getNombre());
+        carro.agregarPrecio(Trapo_De_Piso.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnResTpActionPerformed
 
-    private void jButton146ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton146ActionPerformed
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+    private void bntResJbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntResJbActionPerformed
+        Jabon.restarProducto();
+        Jabon.calcularTotal();
+        carro.agregarNombres(Jabon.getNombre());
+        carro.agregarPrecio(Jabon.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton146ActionPerformed
+    }//GEN-LAST:event_bntResJbActionPerformed
 
     private void btnResPhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResPhActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
+        Papel_Higienico.restarProducto();
+        Papel_Higienico.calcularTotal();
+        carro.agregarNombres(Papel_Higienico.getNombre());
+        carro.agregarPrecio(Papel_Higienico.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnResPhActionPerformed
 
     private void btnSumPlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumPlActionPerformed
@@ -2065,6 +2156,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(pollo.getNombre());
         carro.agregarPrecio(pollo.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumPlActionPerformed
 
     private void btnSumpsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumpsActionPerformed
@@ -2074,6 +2167,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(pescado.getNombre());
         carro.agregarPrecio(pescado.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
 
     }//GEN-LAST:event_btnSumpsActionPerformed
 
@@ -2084,6 +2179,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(cerdo.getNombre());
         carro.agregarPrecio(cerdo.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumCrActionPerformed
 
     private void btnSumToActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumToActionPerformed
@@ -2093,6 +2190,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(tomate.getNombre());
         carro.agregarPrecio(tomate.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumToActionPerformed
 
     private void btnSumPpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumPpActionPerformed
@@ -2102,6 +2201,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(papa.getNombre());
         carro.agregarPrecio(papa.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumPpActionPerformed
 
     private void btnSumLcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumLcActionPerformed
@@ -2111,6 +2212,8 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(lechuga.getNombre());
         carro.agregarPrecio(lechuga.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumLcActionPerformed
 
     private void btnSumZhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumZhActionPerformed
@@ -2120,7 +2223,86 @@ public class Intentando extends javax.swing.JFrame {
         carro.agregarNombres(zanahoria.getNombre());
         carro.agregarPrecio(zanahoria.getPrecio());
         txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumZhActionPerformed
+
+    private void btnSumPhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumPhActionPerformed
+        // TODO add your handling code here:
+        Papel_Higienico.sumarProducto();
+        Papel_Higienico.calcularTotal();
+        carro.agregarNombres(Papel_Higienico.getNombre());
+        carro.agregarPrecio(Papel_Higienico.getPrecio());
+        txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnSumPhActionPerformed
+
+    private void btnSumTpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumTpActionPerformed
+        // TODO add your handling code here:
+        Trapo_De_Piso.sumarProducto();
+        Trapo_De_Piso.calcularTotal();
+        carro.agregarNombres(Trapo_De_Piso.getNombre());
+        carro.agregarPrecio(Trapo_De_Piso.getPrecio());
+        txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnSumTpActionPerformed
+
+    private void btnSumDtrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumDtrActionPerformed
+        // TODO add your handling code here:
+        Detergente.sumarProducto();
+        Detergente.calcularTotal();
+        carro.agregarNombres(Detergente.getNombre());
+        carro.agregarPrecio(Detergente.getPrecio());
+        txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnSumDtrActionPerformed
+
+    private void btnSumLvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumLvActionPerformed
+        // TODO add your handling code here:
+        Lavandina.sumarProducto();
+        Lavandina.calcularTotal();
+        carro.agregarNombres(Lavandina.getNombre());
+        carro.agregarPrecio(Lavandina.getPrecio());
+        txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnSumLvActionPerformed
+
+    private void btnSumJbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumJbActionPerformed
+        // TODO add your handling code here:
+        Jabon.sumarProducto();
+        Jabon.calcularTotal();
+        carro.agregarNombres(Jabon.getNombre());
+        carro.agregarPrecio(Jabon.getPrecio());
+        txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnSumJbActionPerformed
+
+    private void btnSumEsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumEsActionPerformed
+        // TODO add your handling code here:
+        Escoba.sumarProducto();
+        Escoba.calcularTotal();
+        carro.agregarNombres(Escoba.getNombre());
+        carro.agregarPrecio(Escoba.getPrecio());
+        txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnSumEsActionPerformed
+
+    private void btnSumLvsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumLvsActionPerformed
+        // TODO add your handling code here:
+        Limpia_Vidrios.sumarProducto();
+        Limpia_Vidrios.calcularTotal();
+        carro.agregarNombres(Limpia_Vidrios.getNombre());
+        carro.agregarPrecio(Limpia_Vidrios.getPrecio());
+        txtCarro.setText(carro.hacerTxt());
+        carro.calcularTotal();
+        lbtotal.setText(Integer.toString(carro.getTotal()));
+    }//GEN-LAST:event_btnSumLvsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2163,7 +2345,12 @@ public class Intentando extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bntResJb;
+    private javax.swing.JButton btnResDtr;
+    private javax.swing.JButton btnResEs;
     private javax.swing.JButton btnResLc;
+    private javax.swing.JButton btnResLv;
+    private javax.swing.JButton btnResLvs;
     private javax.swing.JButton btnResPh;
     private javax.swing.JButton btnResPp;
     private javax.swing.JButton btnResPs;
@@ -2181,7 +2368,12 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JButton btnSumC;
     private javax.swing.JButton btnSumCm;
     private javax.swing.JButton btnSumCr;
+    private javax.swing.JButton btnSumDtr;
+    private javax.swing.JButton btnSumEs;
+    private javax.swing.JButton btnSumJb;
     private javax.swing.JButton btnSumLc;
+    private javax.swing.JButton btnSumLv;
+    private javax.swing.JButton btnSumLvs;
     private javax.swing.JButton btnSumM;
     private javax.swing.JButton btnSumP;
     private javax.swing.JButton btnSumPh;
@@ -2216,16 +2408,6 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton120;
     private javax.swing.JButton jButton121;
-    private javax.swing.JButton jButton146;
-    private javax.swing.JButton jButton147;
-    private javax.swing.JButton jButton150;
-    private javax.swing.JButton jButton151;
-    private javax.swing.JButton jButton154;
-    private javax.swing.JButton jButton155;
-    private javax.swing.JButton jButton156;
-    private javax.swing.JButton jButton157;
-    private javax.swing.JButton jButton158;
-    private javax.swing.JButton jButton159;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
@@ -2276,7 +2458,6 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -2324,6 +2505,7 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblRemera;
     public javax.swing.JLabel lbl_estUs;
+    private javax.swing.JLabel lbtotal;
     private javax.swing.JTextArea txtCarro;
     // End of variables declaration//GEN-END:variables
 
