@@ -39,7 +39,6 @@ public class Ropa extends Producto {
     public void aplicarDescuento() {
         int cantprob = super.cantidad;
         if (super.descuento) {
-            System.out.println("hola");
             if (super.cantidad % 2 == 0) {
                 super.precio = precioUnit * cantidad;
                 super.precio = super.precio / 2;
@@ -71,12 +70,6 @@ public class Ropa extends Producto {
         aplicarDescuento();
     }
 
-    @Override
-    public void calcularTotal() {
-        validarDescuento();
-        aplicarDescuento();
-    }
-    
     @Override
     public String toString() {
         return super.toString() + " La talla de la ropa es= " + talle; //To change body of generated methods, choose Tools | Templates.

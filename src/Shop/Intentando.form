@@ -1900,20 +1900,12 @@
                     </Property>
                   </Properties>
                 </Component>
-<<<<<<< HEAD
-                <Component class="javax.swing.JButton" name="btnResPH">
-=======
                 <Component class="javax.swing.JButton" name="btnResLv">
->>>>>>> Diogenes
                   <Properties>
                     <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
-<<<<<<< HEAD
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResPHActionPerformed"/>
-=======
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResLvActionPerformed"/>
->>>>>>> Diogenes
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel162">
@@ -1921,11 +1913,7 @@
                     <Property name="text" type="java.lang.String" value="0"/>
                   </Properties>
                 </Component>
-<<<<<<< HEAD
-                <Component class="javax.swing.JButton" name="btnSumPH">
-=======
                 <Component class="javax.swing.JButton" name="btnSumLv">
->>>>>>> Diogenes
                   <Properties>
                     <Property name="text" type="java.lang.String" value="+"/>
                   </Properties>
@@ -1959,19 +1947,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnResJ" min="-2" pref="45" max="-2" attributes="0"/>
-=======
                                   <Component id="btnResDtr" min="-2" pref="45" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel164" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnSumJ" min="-2" pref="45" max="-2" attributes="0"/>
-=======
                                   <Component id="btnSumDtr" min="-2" pref="45" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -2005,15 +1985,9 @@
                                   <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-<<<<<<< HEAD
-                                      <Component id="jLabel154" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="btnSumJ" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="btnResJ" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
                                       <Component id="jLabel164" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                                       <Component id="btnSumDtr" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                       <Component id="btnResDtr" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   </Group>
                               </Group>
                           </Group>
@@ -2033,20 +2007,12 @@
                     </Property>
                   </Properties>
                 </Component>
-<<<<<<< HEAD
-                <Component class="javax.swing.JButton" name="btnResJ">
-=======
                 <Component class="javax.swing.JButton" name="btnResDtr">
->>>>>>> Diogenes
                   <Properties>
                     <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
-<<<<<<< HEAD
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResJActionPerformed"/>
-=======
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResDtrActionPerformed"/>
->>>>>>> Diogenes
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel164">
@@ -2054,11 +2020,7 @@
                     <Property name="text" type="java.lang.String" value="0"/>
                   </Properties>
                 </Component>
-<<<<<<< HEAD
-                <Component class="javax.swing.JButton" name="btnSumJ">
-=======
                 <Component class="javax.swing.JButton" name="btnSumDtr">
->>>>>>> Diogenes
                   <Properties>
                     <Property name="text" type="java.lang.String" value="+"/>
                   </Properties>
@@ -2092,19 +2054,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnResTP" min="-2" pref="45" max="-2" attributes="0"/>
-=======
                                   <Component id="btnResLvs" min="-2" pref="45" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel166" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnSumTP" min="-2" pref="45" max="-2" attributes="0"/>
-=======
                                   <Component id="btnSumLvs" min="-2" pref="45" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -2138,15 +2092,9 @@
                                   <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-<<<<<<< HEAD
-                                      <Component id="jLabel156" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="btnSumTP" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="btnResTP" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
                                       <Component id="jLabel166" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                                       <Component id="btnSumLvs" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                       <Component id="btnResLvs" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   </Group>
                               </Group>
                           </Group>
@@ -2166,20 +2114,12 @@
                     </Property>
                   </Properties>
                 </Component>
-<<<<<<< HEAD
-                <Component class="javax.swing.JButton" name="btnResTP">
-=======
                 <Component class="javax.swing.JButton" name="btnResLvs">
->>>>>>> Diogenes
                   <Properties>
                     <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
-<<<<<<< HEAD
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResTPActionPerformed"/>
-=======
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResLvsActionPerformed"/>
->>>>>>> Diogenes
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel166">
@@ -2187,11 +2127,7 @@
                     <Property name="text" type="java.lang.String" value="0"/>
                   </Properties>
                 </Component>
-<<<<<<< HEAD
-                <Component class="javax.swing.JButton" name="btnSumTP">
-=======
                 <Component class="javax.swing.JButton" name="btnSumLvs">
->>>>>>> Diogenes
                   <Properties>
                     <Property name="text" type="java.lang.String" value="+"/>
                   </Properties>
@@ -2303,21 +2239,12 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnResE" min="-2" pref="45" max="-2" attributes="0"/>
-=======
                                   <Component id="btnRestP" min="-2" pref="45" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel99" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnSumE" min="-2" pref="45" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-=======
                                   <Component id="btnSumP" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
->>>>>>> Diogenes
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2400,12 +2327,6 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel100" min="-2" pref="170" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-<<<<<<< HEAD
-                                  <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel158" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="btnSumE" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="btnResE" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -2422,65 +2343,10 @@
                                           <Component id="btnSumR" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                           <Component id="btnRestR" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
->>>>>>> Diogenes
                                   </Group>
                                   <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
-<<<<<<< HEAD
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                </DimensionLayout>
-              </Layout>
-              <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel157">
-                  <Properties>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 120]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 120]"/>
-                    </Property>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnResE">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="-"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResEActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel158">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="0"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnSumE">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.Box$Filler" name="filler22">
-                  <Properties>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[32767, 0]"/>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="classDetails" type="java.lang.String" value="Box.Filler.HorizontalGlue"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel19">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="$125"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
-            <Container class="javax.swing.JPanel" name="jPanel75">
-=======
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
@@ -2529,28 +2395,18 @@
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel42">
->>>>>>> Diogenes
 
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnResLA" min="-2" pref="45" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="jLabel162" min="-2" pref="20" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="btnSumLA" min="-2" pref="45" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-=======
                                   <Component id="btnRestM" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel103" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="btnSumM" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
->>>>>>> Diogenes
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2566,76 +2422,13 @@
                                   <Component id="jLabel102" min="-2" pref="115" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-<<<<<<< HEAD
-                                      <Component id="jLabel162" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="btnSumLA" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="btnResLA" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
                                       <Component id="jLabel103" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                                       <Component id="btnSumM" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                       <Component id="btnRestM" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
-<<<<<<< HEAD
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                </DimensionLayout>
-              </Layout>
-              <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel161">
-                  <Properties>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 120]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 120]"/>
-                    </Property>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnResLA">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="-"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResLAActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel162">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="0"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnSumLA">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumLAActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.Box$Filler" name="filler24">
-                  <Properties>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[32767, 0]"/>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="classDetails" type="java.lang.String" value="Box.Filler.HorizontalGlue"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel21">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="$169"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
-            <Container class="javax.swing.JPanel" name="jPanel76">
-=======
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
@@ -2674,28 +2467,18 @@
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel43">
->>>>>>> Diogenes
 
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnResD" min="-2" pref="45" max="-2" attributes="0"/>
-=======
                                   <Component id="btnRestZ" min="-2" pref="45" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel105" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnSumD" min="-2" pref="45" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-=======
                                   <Component id="btnSumZ" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
->>>>>>> Diogenes
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2711,73 +2494,13 @@
                                   <Component id="jLabel104" min="-2" pref="115" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-<<<<<<< HEAD
-                                      <Component id="jLabel164" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="btnSumD" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="btnResD" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
                                       <Component id="jLabel105" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                                       <Component id="btnSumZ" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                       <Component id="btnRestZ" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
-<<<<<<< HEAD
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                </DimensionLayout>
-              </Layout>
-              <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel163">
-                  <Properties>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 120]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 120]"/>
-                    </Property>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnResD">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="-"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResDActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel164">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="0"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnSumD">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.Box$Filler" name="filler25">
-                  <Properties>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[32767, 0]"/>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="classDetails" type="java.lang.String" value="Box.Filler.HorizontalGlue"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel22">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="$69"/>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
-            <Container class="javax.swing.JPanel" name="jPanel77">
-=======
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
@@ -2816,28 +2539,18 @@
                       </SubComponents>
                     </Container>
                     <Container class="javax.swing.JPanel" name="jPanel44">
->>>>>>> Diogenes
 
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnResLV" min="-2" pref="45" max="-2" attributes="0"/>
-=======
                                   <Component id="btnRestCm" min="-2" pref="45" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel107" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-<<<<<<< HEAD
-                                  <Component id="btnSumLV" min="-2" pref="45" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-=======
                                   <Component id="btnSumCm" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
->>>>>>> Diogenes
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2853,70 +2566,13 @@
                                   <Component id="jLabel106" min="-2" pref="115" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-<<<<<<< HEAD
-                                      <Component id="jLabel166" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="btnSumLV" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="btnResLV" alignment="3" min="-2" max="-2" attributes="0"/>
-=======
                                       <Component id="jLabel107" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                                       <Component id="btnSumCm" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                                       <Component id="btnRestCm" alignment="3" min="-2" max="-2" attributes="0"/>
->>>>>>> Diogenes
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
-<<<<<<< HEAD
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                </DimensionLayout>
-              </Layout>
-              <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel165">
-                  <Properties>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 120]"/>
-                    </Property>
-                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[120, 120]"/>
-                    </Property>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnResLV">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="-"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResLVActionPerformed"/>
-                  </Events>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel166">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="0"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JButton" name="btnSumLV">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.Box$Filler" name="filler26">
-                  <Properties>
-                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                      <Dimension value="[32767, 0]"/>
-                    </Property>
-                  </Properties>
-                  <AuxValues>
-                    <AuxValue name="classDetails" type="java.lang.String" value="Box.Filler.HorizontalGlue"/>
-                  </AuxValues>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel23">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="$100"/>
-                  </Properties>
-                </Component>
-=======
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
@@ -2956,12 +2612,7 @@
                     </Container>
                   </SubComponents>
                 </Container>
->>>>>>> Diogenes
               </SubComponents>
-            </Container>
-            <Container class="javax.swing.JScrollPane" name="jScrollPane4">
-
-              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
             </Container>
           </SubComponents>
         </Container>

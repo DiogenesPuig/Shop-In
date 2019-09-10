@@ -23,7 +23,7 @@ public class Intentando extends javax.swing.JFrame {
     String[] cantidad2 = new String[20];
     Carrito carro = new Carrito();
 
-    //especial,nombre,precioUnit,Precio,codigo,cantidad,descuento
+    //especial,nombre,precioUnit,Precio,codigo,cantidad,descuento 
     Ropa remera = new Ropa("m", "remera", 500, 500, "333344", 0, false);
     Ropa pantalon = new Ropa("m", "pantalon", 800, 800, "334400", 0, false);
     Ropa medias = new Ropa("m", "medias", 100, 100, "333145", 0, true);
@@ -2005,7 +2005,7 @@ public class Intentando extends javax.swing.JFrame {
         lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumMActionPerformed
 
-    private void btnResLVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResLVActionPerformed
+    private void btnRestMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestMActionPerformed
         // TODO add your handling code here:
         medias.restarProducto();
         medias.calcularTotal();
@@ -2027,7 +2027,7 @@ public class Intentando extends javax.swing.JFrame {
         lbtotal.setText(Integer.toString(carro.getTotal()));
     }//GEN-LAST:event_btnSumPActionPerformed
 
-    private void btnResEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResEActionPerformed
+    private void btnRestPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestPActionPerformed
         // TODO add your handling code here:
         pantalon.restarProducto();
         pantalon.calcularTotal();
@@ -2311,7 +2311,7 @@ public class Intentando extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -2499,7 +2499,6 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
