@@ -339,6 +339,7 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="txtCarro">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
               </Properties>
@@ -521,7 +522,7 @@
                     </Component>
                     <Component class="javax.swing.JButton" name="btnRestC">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="+"/>
+                        <Property name="text" type="java.lang.String" value="-"/>
                       </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestCActionPerformed"/>
@@ -566,11 +567,11 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton132" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnResTo" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel140" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton133" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnSumTo" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -605,8 +606,8 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel140" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="jButton133" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Component id="jButton132" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnSumTo" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="btnResTo" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -626,12 +627,12 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton132">
+                    <Component class="javax.swing.JButton" name="btnResTo">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="+"/>
+                        <Property name="text" type="java.lang.String" value="-"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton132ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResToActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel140">
@@ -639,10 +640,13 @@
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton133">
+                    <Component class="javax.swing.JButton" name="btnSumTo">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumToActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.Box$Filler" name="filler11">
                       <Properties>
@@ -732,7 +736,7 @@
                     </Component>
                     <Component class="javax.swing.JButton" name="btnRestPl">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="+"/>
+                        <Property name="text" type="java.lang.String" value="-"/>
                       </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRestPlActionPerformed"/>
@@ -747,6 +751,9 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumPlActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.Box$Filler" name="filler12">
                       <Properties>
@@ -774,11 +781,11 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton136" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnResPp" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel144" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton137" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnSumPp" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -813,8 +820,8 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel144" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="jButton137" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Component id="jButton136" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnSumPp" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="btnResPp" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -834,12 +841,12 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton136">
+                    <Component class="javax.swing.JButton" name="btnResPp">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="+"/>
+                        <Property name="text" type="java.lang.String" value="-"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton136ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResPpActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel144">
@@ -847,10 +854,13 @@
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton137">
+                    <Component class="javax.swing.JButton" name="btnSumPp">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumPpActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.Box$Filler" name="filler13">
                       <Properties>
@@ -878,11 +888,11 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton138" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnResZh" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel146" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton139" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnSumZh" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -917,8 +927,8 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel146" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="jButton139" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Component id="jButton138" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnSumZh" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="btnResZh" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -938,12 +948,12 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton138">
+                    <Component class="javax.swing.JButton" name="btnResZh">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="+"/>
+                        <Property name="text" type="java.lang.String" value="-"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton138ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResZhActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel146">
@@ -951,10 +961,13 @@
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton139">
+                    <Component class="javax.swing.JButton" name="btnSumZh">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumZhActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.Box$Filler" name="filler14">
                       <Properties>
@@ -982,11 +995,11 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton140" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnRescer" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel148" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton141" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnSumCr" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1021,8 +1034,8 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel148" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="jButton141" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Component id="jButton140" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnSumCr" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="btnRescer" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -1042,12 +1055,12 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton140">
+                    <Component class="javax.swing.JButton" name="btnRescer">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="+"/>
+                        <Property name="text" type="java.lang.String" value="-"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton140ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRescerActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel148">
@@ -1055,10 +1068,13 @@
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton141">
+                    <Component class="javax.swing.JButton" name="btnSumCr">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumCrActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.Box$Filler" name="filler15">
                       <Properties>
@@ -1086,11 +1102,11 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton142" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnResPs" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel150" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton143" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnSumps" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1125,8 +1141,8 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel150" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="jButton143" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Component id="jButton142" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnSumps" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="btnResPs" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -1146,12 +1162,12 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton142">
+                    <Component class="javax.swing.JButton" name="btnResPs">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="+"/>
+                        <Property name="text" type="java.lang.String" value="-"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton142ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResPsActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel150">
@@ -1159,10 +1175,13 @@
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton143">
+                    <Component class="javax.swing.JButton" name="btnSumps">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumpsActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.Box$Filler" name="filler16">
                       <Properties>
@@ -1190,11 +1209,11 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton144" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnResLc" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="jLabel152" min="-2" pref="20" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton145" min="-2" pref="45" max="-2" attributes="0"/>
+                                      <Component id="btnSumLc" min="-2" pref="45" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1229,8 +1248,8 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
                                           <Component id="jLabel152" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="jButton145" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                          <Component id="jButton144" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="btnSumLc" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="btnResLc" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -1250,12 +1269,12 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton144">
+                    <Component class="javax.swing.JButton" name="btnResLc">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="+"/>
+                        <Property name="text" type="java.lang.String" value="-"/>
                       </Properties>
                       <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton144ActionPerformed"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResLcActionPerformed"/>
                       </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel152">
@@ -1263,10 +1282,13 @@
                         <Property name="text" type="java.lang.String" value="0"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton145">
+                    <Component class="javax.swing.JButton" name="btnSumLc">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="+"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSumLcActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.Box$Filler" name="filler17">
                       <Properties>
@@ -1390,11 +1412,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton122" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnResPh" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel130" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton123" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnSumPh" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -1429,8 +1451,8 @@
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel130" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="jButton123" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="jButton122" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnSumPh" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="btnResPh" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -1450,12 +1472,12 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton122">
+                <Component class="javax.swing.JButton" name="btnResPh">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton122ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResPhActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel130">
@@ -1463,7 +1485,7 @@
                     <Property name="text" type="java.lang.String" value="0"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton123">
+                <Component class="javax.swing.JButton" name="btnSumPh">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="+"/>
                   </Properties>
@@ -1556,7 +1578,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton146">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton146ActionPerformed"/>
@@ -1598,11 +1620,11 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jButton148" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnResTp" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel156" min="-2" pref="20" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton149" min="-2" pref="45" max="-2" attributes="0"/>
+                                  <Component id="btnSumTp" min="-2" pref="45" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -1637,8 +1659,8 @@
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel156" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                                      <Component id="jButton149" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Component id="jButton148" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnSumTp" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <Component id="btnResTp" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -1658,12 +1680,12 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton148">
+                <Component class="javax.swing.JButton" name="btnResTp">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton148ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResTpActionPerformed"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel156">
@@ -1671,7 +1693,7 @@
                     <Property name="text" type="java.lang.String" value="0"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton149">
+                <Component class="javax.swing.JButton" name="btnSumTp">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="+"/>
                   </Properties>
@@ -1764,7 +1786,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton150">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton150ActionPerformed"/>
@@ -1868,7 +1890,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton154">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton154ActionPerformed"/>
@@ -1972,7 +1994,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton156">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton156ActionPerformed"/>
@@ -2076,7 +2098,7 @@
                 </Component>
                 <Component class="javax.swing.JButton" name="jButton158">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="+"/>
+                    <Property name="text" type="java.lang.String" value="-"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton158ActionPerformed"/>

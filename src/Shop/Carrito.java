@@ -87,7 +87,11 @@ public class Carrito {
     public String hacerTxt() {
         String text = "";
         for (int i = 0; i < nombre.length; i++) {
-            text = text + nombre[i] + " " + Integer.toString(precios[i]) + " \n";
+            if (nombre[i] == null) {
+                text = text;
+            } else {
+                text = text + nombre[i] + " " + Integer.toString(precios[i]) + " \n";
+            }
         }
         return text;
     }
@@ -109,7 +113,7 @@ public class Carrito {
         int i = 0;
         for (i = 0; nombre[i] != null; i++) {
             System.out.println("algo");
-            if(i>nombre.length){
+            if (i > nombre.length) {
                 break;
             }
         }
@@ -122,7 +126,7 @@ public class Carrito {
             precios[guardar] = precio;
             estoy = false;
         } else {
-            
+
             precios[guardar] = precio;
         }
     }
