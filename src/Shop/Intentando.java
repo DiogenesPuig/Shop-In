@@ -43,9 +43,9 @@ public class Intentando extends javax.swing.JFrame {
     Limpieza Trapo_De_Piso = new Limpieza(10, "Trapo De Piso", 25, 25, "554030", 0, false);
     Limpieza Detergente = new Limpieza(10, "Detergente", 69, 69, "553333", 0, false);
     Limpieza Lavandina = new Limpieza(10, "Lavandina", 169, 169, "554414", 0, false);
-    Limpieza Jabon = new Limpieza(10, "Jabon", 300, 300, "55400", 0, false);
+    Limpieza Jabon = new Limpieza(10, "Jabon", 130, 130, "55400", 0, false);
     Limpieza Escoba = new Limpieza(10, "Escoba", 124, 124, "553044", 0, false);
-    Limpieza Limpia_Vidrios = new Limpieza(10, "Limpia Vidrios", 1000, 1000, "551141", 0, false);
+    Limpieza Limpia_Vidrios = new Limpieza(10, "Limpia Vidrios", 100, 100, "551141", 0, false);
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -1131,7 +1131,7 @@ public class Intentando extends javax.swing.JFrame {
             }
         });
 
-        jLabel18.setText("$490");
+        jLabel18.setText("$25");
 
         javax.swing.GroupLayout jPanel72Layout = new javax.swing.GroupLayout(jPanel72);
         jPanel72.setLayout(jPanel72Layout);
