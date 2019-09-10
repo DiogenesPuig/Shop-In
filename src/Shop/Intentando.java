@@ -24,28 +24,28 @@ public class Intentando extends javax.swing.JFrame {
     Carrito carro = new Carrito();
 
     //especial,nombre,precioUnit,Precio,codigo,cantidad,descuento 
-    Ropa remera = new Ropa("m", "remera", 500, 500, "333344", 0, false);
-    Ropa pantalon = new Ropa("m", "pantalon", 800, 800, "334400", 0, false);
-    Ropa medias = new Ropa("m", "medias", 100, 100, "333145", 0, true);
-    Ropa campera = new Ropa("m", "campera", 1600, 1600, "334344", 0, false);
-    Ropa zapatillas = new Ropa("39", "zapatillas", 900, 900, "334414", 0, false);
+    Ropa remera = new Ropa("m", "remera", 500, 500, 500, "333344", 0, false);
+    Ropa pantalon = new Ropa("m", "pantalon", 800, 800, 800, "334400", 0, false);
+    Ropa medias = new Ropa("m", "medias", 100, 100, 100, "333145", 0, true);
+    Ropa campera = new Ropa("m", "campera", 1600, 1600, 1600, "334344", 0, false);
+    Ropa zapatillas = new Ropa("39", "zapatillas", 900, 900, 900, "334414", 0, false);
     // ---------------------------Alimentos-------------------------------------
-    Alimentos carne = new Alimentos("", "carne", 500, 500, "77433", 0, false);
-    Alimentos pollo = new Alimentos("", "Pollo", 490, 490, "77000", 0, false);
-    Alimentos pescado = new Alimentos("", "Pescado", 200, 200, "773400", 0, false);
-    Alimentos cerdo = new Alimentos("", "Cerdo", 350, 350, "77300", 0, false);
-    Alimentos tomate = new Alimentos("", "Tomate", 130, 130, "770433", 0, false);
-    Alimentos papa = new Alimentos("", "Papa", 80, 80, "77444", 0, false);
-    Alimentos lechuga = new Alimentos("", "Lechuga", 68, 68, "77344", 0, false);
-    Alimentos zanahoria = new Alimentos("", "Zanahoria", 83, 83, "7744014", 0, false);
+    Alimentos carne = new Alimentos("", "carne", 500, 500, 500, "77433", 0, false);
+    Alimentos pollo = new Alimentos("", "Pollo", 490, 490, 490, "77000", 0, false);
+    Alimentos pescado = new Alimentos("", "Pescado", 200, 200, 200, "773400", 0, false);
+    Alimentos cerdo = new Alimentos("", "Cerdo", 350, 350, 350, "77300", 0, false);
+    Alimentos tomate = new Alimentos("", "Tomate", 130, 130, 130, "770433", 0, false);
+    Alimentos papa = new Alimentos("", "Papa", 80, 80, 80, "77444", 0, false);
+    Alimentos lechuga = new Alimentos("", "Lechuga", 68, 68, 68, "77344", 0, false);
+    Alimentos zanahoria = new Alimentos("", "Zanahoria", 83, 83, 83, "7744014", 0, false);
     //---------------------------Limpieza---------------------------------------
-    Limpieza Papel_Higienico = new Limpieza(10, "Papel Higienico", 100, 100, "554100", 0, false);
-    Limpieza Trapo_De_Piso = new Limpieza(10, "Trapo De Piso", 25, 25, "554030", 0, false);
-    Limpieza Detergente = new Limpieza(10, "Detergente", 69, 69, "553333", 0, false);
-    Limpieza Lavandina = new Limpieza(10, "Lavandina", 169, 169, "554414", 0, false);
-    Limpieza Jabon = new Limpieza(10, "Jabon", 130, 130, "55400", 0, false);
-    Limpieza Escoba = new Limpieza(10, "Escoba", 124, 124, "553044", 0, false);
-    Limpieza Limpia_Vidrios = new Limpieza(10, "Limpia Vidrios", 100, 100, "551141", 0, false);
+    Limpieza Papel_Higienico = new Limpieza(10, "Papel Higienico", 100, 100, 100, "554100", 0, false);
+    Limpieza Trapo_De_Piso = new Limpieza(10, "Trapo De Piso", 25, 25, 25, "554030", 0, false);
+    Limpieza Detergente = new Limpieza(10, "Detergente", 69, 69, 69, "553333", 0, false);
+    Limpieza Lavandina = new Limpieza(10, "Lavandina", 169, 169, 169, "554414", 0, false);
+    Limpieza Jabon = new Limpieza(10, "Jabon", 130, 130, 130, "55400", 0, false);
+    Limpieza Escoba = new Limpieza(10, "Escoba", 124, 124, 124, "553044", 0, false);
+    Limpieza Limpia_Vidrios = new Limpieza(10, "Limpia Vidrios", 100, 100, 100, "551141", 0, false);
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -67,7 +67,7 @@ public class Intentando extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lbl_estUs = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        Buscador = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         lbtotal = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -297,10 +297,10 @@ public class Intentando extends javax.swing.JFrame {
             }
         });
 
-        jTextField1.setText("Buscador");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        Buscador.setText("Buscador");
+        Buscador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                BuscadorActionPerformed(evt);
             }
         });
 
@@ -314,7 +314,7 @@ public class Intentando extends javax.swing.JFrame {
                     .addComponent(btnLogOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lbl_estUs, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 158, Short.MAX_VALUE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Buscador, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32))
         );
         jPanel1Layout.setVerticalGroup(
@@ -328,7 +328,7 @@ public class Intentando extends javax.swing.JFrame {
                         .addComponent(btnLogOut))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(39, 39, 39)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Buscador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(12, Short.MAX_VALUE))
         );
 
@@ -1836,26 +1836,23 @@ public class Intentando extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnLogOutActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void BuscadorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscadorActionPerformed
         // TODO add your handling code here:
-        cerdo.restarProducto();
-        cerdo.calcularTotal();
-        carro.agregarNombres(cerdo.getNombre());
-        carro.agregarPrecio(cerdo.getPrecio());
-        txtCarro.setText(carro.hacerTxt());
-        carro.calcularTotal();
-        lbtotal.setText(Integer.toString(carro.getTotal()));
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_BuscadorActionPerformed
 
     private void jButton120ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton120ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here: nose que boton es este :O
         cerdo.restarProducto();
         cerdo.calcularTotal();
         carro.agregarNombres(cerdo.getNombre());
         carro.agregarPrecio(cerdo.getPrecio());
+        carro.agregarPrecioReal(cerdo.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_jButton120ActionPerformed
 
     private void btnResLcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResLcActionPerformed
@@ -1864,9 +1861,13 @@ public class Intentando extends javax.swing.JFrame {
         lechuga.calcularTotal();
         carro.agregarNombres(lechuga.getNombre());
         carro.agregarPrecio(lechuga.getPrecio());
+        carro.agregarPrecioReal(lechuga.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResLcActionPerformed
 
     private void btnResPsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResPsActionPerformed
@@ -1875,9 +1876,13 @@ public class Intentando extends javax.swing.JFrame {
         pescado.calcularTotal();
         carro.agregarNombres(pescado.getNombre());
         carro.agregarPrecio(pescado.getPrecio());
+        carro.agregarPrecioReal(pescado.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResPsActionPerformed
 
     private void btnRescerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRescerActionPerformed
@@ -1886,9 +1891,13 @@ public class Intentando extends javax.swing.JFrame {
         cerdo.calcularTotal();
         carro.agregarNombres(cerdo.getNombre());
         carro.agregarPrecio(cerdo.getPrecio());
+        carro.agregarPrecioReal(cerdo.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnRescerActionPerformed
 
     private void btnResZhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResZhActionPerformed
@@ -1897,9 +1906,13 @@ public class Intentando extends javax.swing.JFrame {
         zanahoria.calcularTotal();
         carro.agregarNombres(zanahoria.getNombre());
         carro.agregarPrecio(zanahoria.getPrecio());
+        carro.agregarPrecioReal(zanahoria.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResZhActionPerformed
 
     private void btnResPpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResPpActionPerformed
@@ -1908,9 +1921,13 @@ public class Intentando extends javax.swing.JFrame {
         papa.calcularTotal();
         carro.agregarNombres(papa.getNombre());
         carro.agregarPrecio(papa.getPrecio());
+        carro.agregarPrecioReal(papa.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResPpActionPerformed
 
     private void btnRestPlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestPlActionPerformed
@@ -1919,9 +1936,13 @@ public class Intentando extends javax.swing.JFrame {
         pollo.calcularTotal();
         carro.agregarNombres(pollo.getNombre());
         carro.agregarPrecio(pollo.getPrecio());
+        carro.agregarPrecioReal(pollo.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnRestPlActionPerformed
 
     private void btnResToActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResToActionPerformed
@@ -1930,9 +1951,13 @@ public class Intentando extends javax.swing.JFrame {
         tomate.calcularTotal();
         carro.agregarNombres(tomate.getNombre());
         carro.agregarPrecio(tomate.getPrecio());
+        carro.agregarPrecioReal(tomate.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResToActionPerformed
 
     private void btnRestCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestCActionPerformed
@@ -1941,9 +1966,13 @@ public class Intentando extends javax.swing.JFrame {
         carne.calcularTotal();
         carro.agregarNombres(carne.getNombre());
         carro.agregarPrecio(carne.getPrecio());
+        carro.agregarPrecioReal(carne.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnRestCActionPerformed
 
     private void btnSumCmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumCmActionPerformed
@@ -1952,9 +1981,13 @@ public class Intentando extends javax.swing.JFrame {
         campera.calcularTotal();
         carro.agregarNombres(campera.getNombre());
         carro.agregarPrecio(campera.getPrecio());
+        carro.agregarPrecioReal(campera.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumCmActionPerformed
 
     private void btnRestCmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestCmActionPerformed
@@ -1963,9 +1996,13 @@ public class Intentando extends javax.swing.JFrame {
         campera.calcularTotal();
         carro.agregarNombres(campera.getNombre());
         carro.agregarPrecio(campera.getPrecio());
+        carro.agregarPrecioReal(campera.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnRestCmActionPerformed
 
     private void btnSumZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumZActionPerformed
@@ -1974,9 +2011,13 @@ public class Intentando extends javax.swing.JFrame {
         zapatillas.calcularTotal();
         carro.agregarNombres(zapatillas.getNombre());
         carro.agregarPrecio(zapatillas.getPrecio());
+        carro.agregarPrecioReal(zapatillas.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumZActionPerformed
 
     private void btnRestZActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestZActionPerformed
@@ -1985,9 +2026,13 @@ public class Intentando extends javax.swing.JFrame {
         zapatillas.calcularTotal();
         carro.agregarNombres(zapatillas.getNombre());
         carro.agregarPrecio(zapatillas.getPrecio());
+        carro.agregarPrecioReal(zapatillas.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnRestZActionPerformed
 
     private void btnSumMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumMActionPerformed
@@ -1996,9 +2041,13 @@ public class Intentando extends javax.swing.JFrame {
         medias.calcularTotal();
         carro.agregarNombres(medias.getNombre());
         carro.agregarPrecio(medias.getPrecio());
+        carro.agregarPrecioReal(medias.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumMActionPerformed
 
     private void btnRestMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestMActionPerformed
@@ -2007,9 +2056,13 @@ public class Intentando extends javax.swing.JFrame {
         medias.calcularTotal();
         carro.agregarNombres(medias.getNombre());
         carro.agregarPrecio(medias.getPrecio());
+        carro.agregarPrecioReal(medias.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnRestMActionPerformed
 
     private void btnSumPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumPActionPerformed
@@ -2018,9 +2071,13 @@ public class Intentando extends javax.swing.JFrame {
         pantalon.calcularTotal();
         carro.agregarNombres(pantalon.getNombre());
         carro.agregarPrecio(pantalon.getPrecio());
+        carro.agregarPrecioReal(pantalon.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumPActionPerformed
 
     private void btnRestPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestPActionPerformed
@@ -2029,9 +2086,13 @@ public class Intentando extends javax.swing.JFrame {
         pantalon.calcularTotal();
         carro.agregarNombres(pantalon.getNombre());
         carro.agregarPrecio(pantalon.getPrecio());
+        carro.agregarPrecioReal(pantalon.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnRestPActionPerformed
 
     private void btnSumRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumRActionPerformed
@@ -2040,9 +2101,13 @@ public class Intentando extends javax.swing.JFrame {
         remera.calcularTotal();
         carro.agregarNombres(remera.getNombre());
         carro.agregarPrecio(remera.getPrecio());
+        carro.agregarPrecioReal(remera.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumRActionPerformed
 
     private void btnRestRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestRActionPerformed
@@ -2051,9 +2116,13 @@ public class Intentando extends javax.swing.JFrame {
         remera.calcularTotal();
         carro.agregarNombres(remera.getNombre());
         carro.agregarPrecio(remera.getPrecio());
+        carro.agregarPrecioReal(remera.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnRestRActionPerformed
 
     private void btnSumCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumCActionPerformed
@@ -2063,9 +2132,13 @@ public class Intentando extends javax.swing.JFrame {
         carne.calcularTotal();
         carro.agregarNombres(carne.getNombre());
         carro.agregarPrecio(carne.getPrecio());
+        carro.agregarPrecioReal(carne.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumCActionPerformed
 
     private void btnResLvsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResLvsActionPerformed
@@ -2074,9 +2147,13 @@ public class Intentando extends javax.swing.JFrame {
         Limpia_Vidrios.calcularTotal();
         carro.agregarNombres(Limpia_Vidrios.getNombre());
         carro.agregarPrecio(Limpia_Vidrios.getPrecio());
+        carro.agregarPrecioReal(Limpia_Vidrios.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResLvsActionPerformed
 
     private void btnResDtrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResDtrActionPerformed
@@ -2085,9 +2162,13 @@ public class Intentando extends javax.swing.JFrame {
         Detergente.calcularTotal();
         carro.agregarNombres(Detergente.getNombre());
         carro.agregarPrecio(Detergente.getPrecio());
+        carro.agregarPrecioReal(Detergente.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResDtrActionPerformed
 
     private void btnResLvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResLvActionPerformed
@@ -2096,9 +2177,13 @@ public class Intentando extends javax.swing.JFrame {
         Lavandina.calcularTotal();
         carro.agregarNombres(Lavandina.getNombre());
         carro.agregarPrecio(Lavandina.getPrecio());
+        carro.agregarPrecioReal(Lavandina.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResLvActionPerformed
 
     private void btnResEsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResEsActionPerformed
@@ -2107,9 +2192,13 @@ public class Intentando extends javax.swing.JFrame {
         Escoba.calcularTotal();
         carro.agregarNombres(Escoba.getNombre());
         carro.agregarPrecio(Escoba.getPrecio());
+        carro.agregarPrecioReal(Escoba.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResEsActionPerformed
 
     private void btnResTpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResTpActionPerformed
@@ -2118,9 +2207,13 @@ public class Intentando extends javax.swing.JFrame {
         Trapo_De_Piso.calcularTotal();
         carro.agregarNombres(Trapo_De_Piso.getNombre());
         carro.agregarPrecio(Trapo_De_Piso.getPrecio());
+        carro.agregarPrecioReal(Trapo_De_Piso.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResTpActionPerformed
 
     private void bntResJbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntResJbActionPerformed
@@ -2128,9 +2221,13 @@ public class Intentando extends javax.swing.JFrame {
         Jabon.calcularTotal();
         carro.agregarNombres(Jabon.getNombre());
         carro.agregarPrecio(Jabon.getPrecio());
+        carro.agregarPrecioReal(Jabon.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
         // TODO add your handling code here:
     }//GEN-LAST:event_bntResJbActionPerformed
 
@@ -2140,9 +2237,13 @@ public class Intentando extends javax.swing.JFrame {
         Papel_Higienico.calcularTotal();
         carro.agregarNombres(Papel_Higienico.getNombre());
         carro.agregarPrecio(Papel_Higienico.getPrecio());
+        carro.agregarPrecioReal(Papel_Higienico.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnResPhActionPerformed
 
     private void btnSumPlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumPlActionPerformed
@@ -2151,9 +2252,13 @@ public class Intentando extends javax.swing.JFrame {
         pollo.calcularTotal();
         carro.agregarNombres(pollo.getNombre());
         carro.agregarPrecio(pollo.getPrecio());
+        carro.agregarPrecioReal(pollo.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumPlActionPerformed
 
     private void btnSumpsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumpsActionPerformed
@@ -2162,9 +2267,13 @@ public class Intentando extends javax.swing.JFrame {
         pescado.calcularTotal();
         carro.agregarNombres(pescado.getNombre());
         carro.agregarPrecio(pescado.getPrecio());
+        carro.agregarPrecioReal(pescado.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
 
     }//GEN-LAST:event_btnSumpsActionPerformed
 
@@ -2174,9 +2283,13 @@ public class Intentando extends javax.swing.JFrame {
         cerdo.calcularTotal();
         carro.agregarNombres(cerdo.getNombre());
         carro.agregarPrecio(cerdo.getPrecio());
+        carro.agregarPrecioReal(cerdo.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumCrActionPerformed
 
     private void btnSumToActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumToActionPerformed
@@ -2185,9 +2298,13 @@ public class Intentando extends javax.swing.JFrame {
         tomate.calcularTotal();
         carro.agregarNombres(tomate.getNombre());
         carro.agregarPrecio(tomate.getPrecio());
+        carro.agregarPrecioReal(tomate.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumToActionPerformed
 
     private void btnSumPpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumPpActionPerformed
@@ -2196,9 +2313,13 @@ public class Intentando extends javax.swing.JFrame {
         papa.calcularTotal();
         carro.agregarNombres(papa.getNombre());
         carro.agregarPrecio(papa.getPrecio());
+        carro.agregarPrecioReal(papa.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumPpActionPerformed
 
     private void btnSumLcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumLcActionPerformed
@@ -2207,9 +2328,13 @@ public class Intentando extends javax.swing.JFrame {
         lechuga.calcularTotal();
         carro.agregarNombres(lechuga.getNombre());
         carro.agregarPrecio(lechuga.getPrecio());
+        carro.agregarPrecioReal(lechuga.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumLcActionPerformed
 
     private void btnSumZhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumZhActionPerformed
@@ -2218,9 +2343,13 @@ public class Intentando extends javax.swing.JFrame {
         zanahoria.calcularTotal();
         carro.agregarNombres(zanahoria.getNombre());
         carro.agregarPrecio(zanahoria.getPrecio());
+        carro.agregarPrecioReal(zanahoria.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumZhActionPerformed
 
     private void btnSumPhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumPhActionPerformed
@@ -2229,9 +2358,13 @@ public class Intentando extends javax.swing.JFrame {
         Papel_Higienico.calcularTotal();
         carro.agregarNombres(Papel_Higienico.getNombre());
         carro.agregarPrecio(Papel_Higienico.getPrecio());
+        carro.agregarPrecioReal(Papel_Higienico.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumPhActionPerformed
 
     private void btnSumTpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumTpActionPerformed
@@ -2240,9 +2373,13 @@ public class Intentando extends javax.swing.JFrame {
         Trapo_De_Piso.calcularTotal();
         carro.agregarNombres(Trapo_De_Piso.getNombre());
         carro.agregarPrecio(Trapo_De_Piso.getPrecio());
+        carro.agregarPrecioReal(Trapo_De_Piso.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumTpActionPerformed
 
     private void btnSumDtrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumDtrActionPerformed
@@ -2251,9 +2388,13 @@ public class Intentando extends javax.swing.JFrame {
         Detergente.calcularTotal();
         carro.agregarNombres(Detergente.getNombre());
         carro.agregarPrecio(Detergente.getPrecio());
+        carro.agregarPrecioReal(Detergente.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumDtrActionPerformed
 
     private void btnSumLvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumLvActionPerformed
@@ -2262,9 +2403,13 @@ public class Intentando extends javax.swing.JFrame {
         Lavandina.calcularTotal();
         carro.agregarNombres(Lavandina.getNombre());
         carro.agregarPrecio(Lavandina.getPrecio());
+        carro.agregarPrecioReal(Lavandina.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumLvActionPerformed
 
     private void btnSumJbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumJbActionPerformed
@@ -2273,9 +2418,13 @@ public class Intentando extends javax.swing.JFrame {
         Jabon.calcularTotal();
         carro.agregarNombres(Jabon.getNombre());
         carro.agregarPrecio(Jabon.getPrecio());
+        carro.agregarPrecioReal(Jabon.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumJbActionPerformed
 
     private void btnSumEsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumEsActionPerformed
@@ -2284,9 +2433,13 @@ public class Intentando extends javax.swing.JFrame {
         Escoba.calcularTotal();
         carro.agregarNombres(Escoba.getNombre());
         carro.agregarPrecio(Escoba.getPrecio());
+        carro.agregarPrecioReal(Escoba.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumEsActionPerformed
 
     private void btnSumLvsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumLvsActionPerformed
@@ -2295,9 +2448,13 @@ public class Intentando extends javax.swing.JFrame {
         Limpia_Vidrios.calcularTotal();
         carro.agregarNombres(Limpia_Vidrios.getNombre());
         carro.agregarPrecio(Limpia_Vidrios.getPrecio());
+        carro.agregarPrecioReal(Limpia_Vidrios.getPrecioReal());
         txtCarro.setText(carro.hacerTxt());
         carro.calcularTotal();
+        carro.calcularTotalReal();
         lbtotal.setText(Integer.toString(carro.getTotal()));
+        int ahorrado = carro.getTotalReal() - carro.getTotal();
+        lblAhorrado.setText(Integer.toString(ahorrado));
     }//GEN-LAST:event_btnSumLvsActionPerformed
 
     /**
@@ -2341,6 +2498,7 @@ public class Intentando extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Buscador;
     private javax.swing.JButton bntResJb;
     private javax.swing.JButton btnLogOut;
     private javax.swing.JButton btnResDtr;
@@ -2497,7 +2655,6 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblAhorrado;
     private javax.swing.JLabel lblRemera;
     public javax.swing.JLabel lbl_estUs;
@@ -2576,4 +2733,5 @@ public class Intentando extends javax.swing.JFrame {
         jLabel165.setIcon(iconc7);
 
     }
+
 }

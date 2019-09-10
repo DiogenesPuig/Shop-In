@@ -13,8 +13,8 @@ public class Limpieza extends Producto {
 
     private int cantDeUsos;
 
-    public Limpieza(int cantDeUsos, String nombre, int precioUnit, int precio, String code, int cantidad, boolean descuento) {
-        super(nombre, precioUnit, precio, code, cantidad, descuento);
+    public Limpieza(int cantDeUsos, String nombre, int precioUnit, int precioReal, int precio, String code, int cantidad, boolean descuento) {
+        super(nombre, precioUnit, precio, precioReal, code, cantidad, descuento);
         this.cantDeUsos = cantDeUsos;
     }
 

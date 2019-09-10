@@ -12,10 +12,11 @@ import java.sql.Date;
  * @author diogenes
  */
 public class Alimentos extends Producto {
-    private String vencimiento; 
 
-    public Alimentos(String vencimiento, String nombre, int precioUnit, int precio, String code, int cantidad, boolean descuento) {
-        super(nombre, precioUnit, precio, code, cantidad, descuento);
+    private String vencimiento;
+
+    public Alimentos(String vencimiento, String nombre, int precioUnit, int precioReal, int precio, String code, int cantidad, boolean descuento) {
+        super(nombre, precioUnit, precio, precioReal, code, cantidad, descuento);
         this.vencimiento = vencimiento;
     }
 
@@ -29,19 +30,19 @@ public class Alimentos extends Producto {
 
     @Override
     public String toString() {
-        return super.toString() + " La fecha de vencimiento es ="+ vencimiento; //To change body of generated methods, choose Tools | Templates.
+        return super.toString() + " La fecha de vencimiento es =" + vencimiento; //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
     public void aplicarDescuento() {
-        if(super.descuento){
+        if (super.descuento) {
             super.precio = super.precioUnit * super.cantidad;
-            super.precio -= super.precio/10;
-        }else{
+            super.precio -= super.precio / 10;
+        } else {
             precio = precioUnit * cantidad;
         }
     }
-    
+
     @Override
     public void calcularTotal() {
         validarDescuento();
@@ -52,6 +53,5 @@ public class Alimentos extends Producto {
     public void validarDescuento() {
         super.descuento = true;
     }
-    
-    
+
 }

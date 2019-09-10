@@ -14,17 +14,21 @@ import java.util.Arrays;
 public class Carrito {
 
     private int total;
+    private int totalReal;
     private String nombre[] = new String[20];
     private int precios[] = new int[20];
+    private int precioReal[] = new int[20];
     private boolean estoy;
     private int guardar;
     private String texto;
     //hacer una arrays para agregar todos los precios (?
 
-    public Carrito(int total, String[] nombre, int[] precios, boolean estoy, int guardar, String texto) {
+    public Carrito(int total, int totalReal, String[] nombre, int[] precios, int[] precioReal, boolean estoy, int guardar, String texto) {
         this.total = total;
+        this.totalReal = totalReal;
         this.nombre = nombre;
         this.precios = precios;
+        this.precioReal = precioReal;
         this.estoy = estoy;
         this.guardar = guardar;
         this.texto = texto;
@@ -44,6 +48,14 @@ public class Carrito {
         this.total = total;
     }
 
+    public int getTotalReal() {
+        return totalReal;
+    }
+
+    public void setTotalReal(int totalReal) {
+        this.totalReal = totalReal;
+    }
+
     public String[] getNombre() {
         return nombre;
     }
@@ -58,6 +70,14 @@ public class Carrito {
 
     public void setPrecios(int[] precios) {
         this.precios = precios;
+    }
+
+    public int[] getPrecioReal() {
+        return precioReal;
+    }
+
+    public void setPrecioReal(int[] precioReal) {
+        this.precioReal = precioReal;
     }
 
     public boolean isEstoy() {
@@ -120,6 +140,17 @@ public class Carrito {
         return i;
     }
 
+    public void agregarPrecioReal(int precio) {
+        System.out.println("precios");
+        if (estoy) {
+            precioReal[guardar] = precio;
+            estoy = false;
+        } else {
+
+            precioReal[guardar] = precio;
+        }
+    }
+
     public void agregarPrecio(int precio) {
         System.out.println("precios");
         if (estoy) {
@@ -151,10 +182,20 @@ public class Carrito {
     public void calcularTotal() {
         total = 0;
         for (int i = 0; i < (precios.length); i++) {
-            if(nombre[i] == null){
+            if (nombre[i] == null) {
                 break;
             }
             total = total + precios[i];
+        }
+    }
+
+    public void calcularTotalReal() {
+        totalReal = 0;
+        for (int i = 0; i < (precioReal.length); i++) {
+            if (nombre[i] == null) {
+                break;
+            }
+            totalReal = totalReal + precioReal[i];
         }
     }
 

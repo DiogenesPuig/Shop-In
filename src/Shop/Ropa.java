@@ -13,8 +13,8 @@ public class Ropa extends Producto {
 
     private String talle;
 
-    public Ropa(String talle, String nombre, int precioUnit, int precio, String code, int cantidad, boolean descuento) {
-        super(nombre, precioUnit, precio, code, cantidad, descuento);
+    public Ropa(String talle, String nombre, int precioUnit, int precioReal, int precio, String code, int cantidad, boolean descuento) {
+        super(nombre, precioUnit, precio, precioReal, code, cantidad, descuento);
         this.talle = talle;
     }
 
@@ -28,9 +28,9 @@ public class Ropa extends Producto {
 
     @Override
     public void validarDescuento() {
-        if(super.cantidad>=2){
+        if (super.cantidad >= 2) {
             super.descuento = true;
-        }else{
+        } else {
             super.descuento = false;
         }
     }
@@ -43,13 +43,13 @@ public class Ropa extends Producto {
                 super.precio = precioUnit * cantidad;
                 super.precio = super.precio / 2;
                 System.out.println(precio);
-            }else{
-                super.precio = super.precioUnit * super.cantidad;               
-                super.precio = ((super.precio - super.precioUnit)/2);
-                super.precio+= super.precioUnit;
+            } else {
+                super.precio = super.precioUnit * super.cantidad;
+                super.precio = ((super.precio - super.precioUnit) / 2);
+                super.precio += super.precioUnit;
             }
-            
-        }else{
+
+        } else {
             precio = precioUnit * cantidad;
         }
     }
@@ -63,7 +63,7 @@ public class Ropa extends Producto {
     public void sumarProducto() {
         super.sumarProducto(); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
     @Override
     public void calcularTotal() {
         validarDescuento();

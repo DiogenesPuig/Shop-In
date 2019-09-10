@@ -13,6 +13,7 @@ public class Producto {
 
     private String nombre;
     protected int precioUnit;
+    protected int precioReal;
     protected int precio;
     private String code;
     protected int cantidad;
@@ -30,9 +31,10 @@ public class Producto {
         descuento = false;
     }
 
-    public Producto(String nombre, int precioUnit, int precio, String code, int cantidad, boolean descuento) {
+    public Producto(String nombre, int precioUnit, int precioReal, int precio, String code, int cantidad, boolean descuento) {
         this.nombre = nombre;
         this.precioUnit = precioUnit;
+        this.precioReal = precioReal;
         this.code = code;
         this.cantidad = cantidad;
         this.precio = precio;
@@ -55,6 +57,14 @@ public class Producto {
 
     public void setPrecioUnit(int precioUnit) {
         this.precioUnit = precioUnit;
+    }
+
+    public int getPrecioReal() {
+        return precioReal;
+    }
+
+    public void setPrecioReal(int precioReal) {
+        this.precioReal = precioReal;
     }
 
     public int getPrecio() {
@@ -94,19 +104,18 @@ public class Producto {
     }
 
     public void restarProducto() {
-        if (cantidad == 0 ){
+        if (cantidad == 0) {
             cantidad = cantidad;
-        }else{
+        } else {
             cantidad -= 1;
         }
-        
-        
+
     }
 
     public void validarDescuento() {
         if (cantidad >= 2) {
             descuento = true;
-        }else{
+        } else {
             descuento = false;
         }
     }
@@ -116,15 +125,19 @@ public class Producto {
             precio = precioUnit - (precioUnit / 4);
         }
     }
-    
-    public void calcularTotal(){
-        if (descuento){
+
+    public void calcularTotal() {
+        if (descuento) {
             aplicarDescuento();
-        }else{
-            precio = precio*cantidad;
+        } else {
+            precio = precio * cantidad;
         }
-        
-        
+
+    }
+
+    public void calcularTotalReal() {
+        precioReal = 0;
+        precioReal = precioUnit * cantidad;
     }
 
     @Override
