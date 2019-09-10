@@ -35,7 +35,8 @@ public class Alimentos extends Producto {
     @Override
     public void aplicarDescuento() {
         if(super.descuento){
-            super.precio = super.precio - super.precio/10; 
+            super.precio = super.precioUnit * super.cantidad;
+            super.precio -= super.precio/10;
         }else{
             precio = precioUnit * cantidad;
         }

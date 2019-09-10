@@ -106,6 +106,8 @@ public class Producto {
     public void validarDescuento() {
         if (cantidad >= 2) {
             descuento = true;
+        }else{
+            descuento = false;
         }
     }
 

@@ -5,6 +5,8 @@
  */
 package Shop;
 
+import java.util.Arrays;
+
 /**
  *
  * @author diogenes
@@ -12,12 +14,27 @@ package Shop;
 public class Carrito {
 
     private int total;
-    private String[] nombre;
-    private int[] precios;
+    private String nombre[] = new String[20];
+    private int precios[] = new int[20];
     private boolean estoy;
     private int guardar;
     private String texto;
     //hacer una arrays para agregar todos los precios (?
+
+    public Carrito(int total, String[] nombre, int[] precios, boolean estoy, int guardar, String texto) {
+        this.total = total;
+        this.nombre = nombre;
+        this.precios = precios;
+        this.estoy = estoy;
+        this.guardar = guardar;
+        this.texto = texto;
+    }
+
+    public Carrito() {
+        total = 0;
+        texto = "";
+
+    }
 
     public int getTotal() {
         return total;
@@ -88,32 +105,37 @@ public class Carrito {
         return -1;
     }
 
-    public int calcularTam() {
-        int i;
-        for (i = 0; i <= nombre.length; i++) {
+    public int rellenar() {
+        int i = 0;
+        for (i = 0; nombre[i] != null; i++) {
             System.out.println("algo");
+            if(i>nombre.length){
+                break;
+            }
         }
         return i;
     }
 
     public void agregarPrecio(int precio) {
+        System.out.println("precios");
         if (estoy) {
             precios[guardar] = precio;
             estoy = false;
         } else {
-            int lugar = calcularTam();
-            precios[lugar] = precio;
+            
+            precios[guardar] = precio;
         }
     }
 
     public void agregarNombres(String nombres) {
+        System.out.println("nombres");
         int n = revisarArrays(nombres);
         if (estoy) {
             nombre[n] = nombres;
             guardar = n;
         } else {
-            int lugar = calcularTam();
-            nombre[lugar] = nombres;
+            guardar = rellenar();
+            nombre[guardar] = nombres;
         }
     }
 

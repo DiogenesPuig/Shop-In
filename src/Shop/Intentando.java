@@ -20,7 +20,8 @@ public class Intentando extends javax.swing.JFrame {
     public Intentando() {
         a();
     }
-
+    int[] cantidad = new int[20];
+    String[] cantidad2 = new String[20];
     Carrito carro = new Carrito();
     
                 //especial,nombre,precioUnit,Precio,codigo,cantidad,descuento 
@@ -28,7 +29,7 @@ public class Intentando extends javax.swing.JFrame {
     Ropa pantalon = new Ropa("m","pantalon",800,800,"334400",0,false);
     Ropa medias = new Ropa("m","medias",100,100,"333145",0,true);
     Ropa campera = new Ropa("m","campera",1600,1600,"334344",0,false);
-    Ropa zapatillas = new Ropa("39","zapatillas",900,900,"334414",0,false);
+    Ropa zapatillas = new Ropa("39","zapatillas",900,900,"334414",0,false); 
     // ---------------------------Alimentos-------------------------------------
     Alimentos carne = new Alimentos("","carne",500,500,"77433",0,false);
     Alimentos pollo = new Alimentos("","Pollo",490,490,"77000",0,false);
@@ -37,7 +38,7 @@ public class Intentando extends javax.swing.JFrame {
     Alimentos tomate = new Alimentos("","Tomate",130,130,"770433",0,false);
     Alimentos papa = new Alimentos("","Papa",80,80,"77444",0,false);
     Alimentos lechuga = new Alimentos("","Lechuga",68,68,"77344",0,false);
-    Alimentos zanahoria = new Alimentos("","Zanahoria",83,83,"7744014",0,false);
+    Alimentos zanahoria = new Alimentos("","Zanahoria",83,83,"7744014",0,false); 
     //---------------------------Limpieza---------------------------------------
     Limpieza Papel_Higienico = new Limpieza(10,"Papel Higienico",100,100,"554100",0,false);
     Limpieza Trapo_De_Piso = new Limpieza(10,"Trapo De Piso",25,25,"554030",0,false);
@@ -45,7 +46,7 @@ public class Intentando extends javax.swing.JFrame {
     Limpieza Lavandina = new Limpieza(10,"Lavandina",169,169,"554414",0,false);
     Limpieza Jabon = new Limpieza(10,"Jabon",300,300,"55400",0,false);
     Limpieza Escoba = new Limpieza(10,"Escoba",124,124,"553044",0,false);
-    Limpieza Limpia_Vidrios = new Limpieza(10,"Limpia Vidrios",1000,1000,"551141",0,false);
+    Limpieza Limpia_Vidrios = new Limpieza(10,"Limpia Vidrios",1000,1000,"551141",0,false); 
     
     
 
@@ -1879,6 +1880,8 @@ public class Intentando extends javax.swing.JFrame {
     private void btnSumCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumCActionPerformed
         // TODO add your handling code here:
         // agregar nombre , agregar precio y hacer el txt
+        carne.sumarProducto();
+        carne.calcularTotal();
         carro.agregarNombres(carne.getNombre());
         carro.agregarPrecio(carne.getPrecio());
         txtCarro.setText(carro.hacerTxt());
