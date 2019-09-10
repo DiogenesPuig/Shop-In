@@ -377,26 +377,34 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jPanel57" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
-                              <Component id="jPanel64" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jPanel57" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                                      <Component id="jPanel64" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jPanel65" min="-2" pref="170" max="-2" attributes="0"/>
+                                      <Component id="jPanel66" min="-2" pref="170" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jPanel69" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                                      <Component id="jPanel70" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jPanel67" min="-2" pref="170" max="-2" attributes="0"/>
+                                      <Component id="jPanel68" min="-2" pref="170" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                  <Component id="filler8" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jPanel65" min="-2" pref="170" max="-2" attributes="0"/>
-                              <Component id="jPanel66" min="-2" pref="170" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jPanel69" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
-                              <Component id="jPanel70" alignment="0" min="-2" pref="170" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jPanel67" min="-2" pref="170" max="-2" attributes="0"/>
-                              <Component id="jPanel68" min="-2" pref="170" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                          <Component id="filler8" min="-2" max="-2" attributes="0"/>
                           <EmptySpace pref="198" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -435,7 +443,9 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="265" max="32767" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="232" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -1307,6 +1317,14 @@
                     </Component>
                   </SubComponents>
                 </Container>
+                <Component class="javax.swing.JLabel" name="jLabel2">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Dialog" size="18" style="3"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="10% de descuento en todos los productos!"/>
+                  </Properties>
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
@@ -1347,6 +1365,7 @@
                               <Component id="filler18" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jSeparator1" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -1370,6 +1389,8 @@
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jPanel75" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
                               </Group>
@@ -2154,6 +2175,14 @@
             </Container>
             <Component class="javax.swing.JSeparator" name="jSeparator1">
             </Component>
+            <Component class="javax.swing.JLabel" name="jLabel7">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="14" style="3"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="LLEVA 3 Y PAGA POR 2"/>
+              </Properties>
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JScrollPane" name="jScrollPane2">
@@ -2179,7 +2208,11 @@
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jPanel43" min="-2" pref="170" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jPanel43" min="-2" pref="170" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                                      <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jPanel41" min="-2" pref="170" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -2212,11 +2245,19 @@
                                           <Component id="jPanel40" alignment="1" max="32767" attributes="0"/>
                                           <Component id="jPanel41" max="32767" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                                      <Component id="jPanel43" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                                              <Component id="jPanel43" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="110" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -2610,6 +2651,14 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Component class="javax.swing.JLabel" name="jLabel20">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Dialog" size="18" style="3"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="2 X 1 EN TODOS LOS PRODUCTOS!!!!"/>
+                      </Properties>
+                    </Component>
                   </SubComponents>
                 </Container>
               </SubComponents>

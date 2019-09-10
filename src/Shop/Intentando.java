@@ -136,6 +136,7 @@ public class Intentando extends javax.swing.JFrame {
         btnSumLc = new javax.swing.JButton();
         filler17 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel15 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jPanel56 = new javax.swing.JPanel();
         filler18 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jPanel59 = new javax.swing.JPanel();
@@ -188,6 +189,7 @@ public class Intentando extends javax.swing.JFrame {
         filler26 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
         jLabel23 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        jLabel7 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jScrollPane3 = new javax.swing.JScrollPane();
         jPanel39 = new javax.swing.JPanel();
@@ -218,6 +220,7 @@ public class Intentando extends javax.swing.JFrame {
         btnRestCm = new javax.swing.JButton();
         jLabel107 = new javax.swing.JLabel();
         btnSumCm = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
 
         jLabel5.setText("Has ahorrado:");
 
@@ -923,28 +926,36 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel2.setFont(new java.awt.Font("Dialog", 3, 18)); // NOI18N
+        jLabel2.setText("10% de descuento en todos los productos!");
+
         javax.swing.GroupLayout jPanel55Layout = new javax.swing.GroupLayout(jPanel55);
         jPanel55.setLayout(jPanel55Layout);
         jPanel55Layout.setHorizontalGroup(
             jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel55Layout.createSequentialGroup()
                 .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel69, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel70, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel67, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel68, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
-                .addComponent(filler8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel55Layout.createSequentialGroup()
+                        .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel57, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel69, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel70, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel67, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel68, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(42, 42, 42)
+                        .addComponent(filler8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel55Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel2)))
                 .addContainerGap(198, Short.MAX_VALUE))
         );
         jPanel55Layout.setVerticalGroup(
@@ -973,7 +984,9 @@ public class Intentando extends javax.swing.JFrame {
                             .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jPanel66, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 265, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(0, 232, Short.MAX_VALUE))
         );
 
         jScrollPane5.setViewportView(jPanel55);
@@ -1442,6 +1455,9 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel7.setFont(new java.awt.Font("Dialog", 3, 14)); // NOI18N
+        jLabel7.setText("LLEVA 3 Y PAGA POR 2");
+
         javax.swing.GroupLayout jPanel56Layout = new javax.swing.GroupLayout(jPanel56);
         jPanel56.setLayout(jPanel56Layout);
         jPanel56Layout.setHorizontalGroup(
@@ -1465,7 +1481,8 @@ public class Intentando extends javax.swing.JFrame {
                         .addComponent(jPanel75, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(36, 36, 36)
                         .addComponent(filler18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel56Layout.setVerticalGroup(
@@ -1484,6 +1501,8 @@ public class Intentando extends javax.swing.JFrame {
                             .addComponent(jPanel77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(jPanel56Layout.createSequentialGroup()
                             .addComponent(jPanel75, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(30, 30, 30)
+                            .addComponent(jLabel7)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1754,6 +1773,9 @@ public class Intentando extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel20.setFont(new java.awt.Font("Dialog", 3, 18)); // NOI18N
+        jLabel20.setText("2 X 1 EN TODOS LOS PRODUCTOS!!!!");
+
         javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
         jPanel39.setLayout(jPanel39Layout);
         jPanel39Layout.setHorizontalGroup(
@@ -1761,7 +1783,10 @@ public class Intentando extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel39Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel39Layout.createSequentialGroup()
+                        .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(91, 91, 91)
+                        .addComponent(jLabel20))
                     .addGroup(jPanel39Layout.createSequentialGroup()
                         .addComponent(jPanel41, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1788,9 +1813,14 @@ public class Intentando extends javax.swing.JFrame {
                             .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jPanel41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel39Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jPanel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel39Layout.createSequentialGroup()
+                                .addGap(75, 75, 75)
+                                .addComponent(jLabel20)))))
+                .addContainerGap(110, Short.MAX_VALUE))
         );
 
         jScrollPane3.setViewportView(jPanel39);
@@ -2356,6 +2386,7 @@ public class Intentando extends javax.swing.JFrame {
         // TODO add your handling code here:
         Papel_Higienico.sumarProducto();
         Papel_Higienico.calcularTotal();
+        
         carro.agregarNombres(Papel_Higienico.getNombre());
         carro.agregarPrecio(Papel_Higienico.getPrecio());
         carro.agregarPrecioReal(Papel_Higienico.getPrecioReal());
@@ -2612,6 +2643,8 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
@@ -2619,6 +2652,7 @@ public class Intentando extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     public javax.swing.JLabel jLabel97;
